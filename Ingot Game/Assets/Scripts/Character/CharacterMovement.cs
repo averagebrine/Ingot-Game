@@ -22,11 +22,16 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private LayerMask whatIsGround;
     [SerializeField] private Transform groundCheckPosition;
     [SerializeField] private Vector2 boxSize;
+
+    [Header("Misc")]
+    [SerializeField] private Transform ppCam;
     
 
     private Rigidbody2D rb;
     private float directionX;
+    private bool sprint;
     private float _drag;
+    private bool isFacingRight = true;
 
     private bool grounded;
     private bool jumpRequest;
@@ -39,13 +44,18 @@ public class CharacterMovement : MonoBehaviour
 
     private void Update()
     {
-        // This is way better than that new input system package :)
         directionX = Input.GetAxisRaw("Horizontal");
 
         if(Input.GetButtonDown("Jump") && grounded)
         {
             jumpRequest = true;
         }
+
+        if(Input.GetButton("Sprint")) sprint = true;
+        else sprint = false;
+
+        // Until Cinemachine
+        ppCam.position = new Vector3(transform.position.x, transform.position.y, ppCam.position.z);
     }
 
     private void FixedUpdate()
@@ -59,8 +69,8 @@ public class CharacterMovement : MonoBehaviour
             rb.AddForce(Vector2.up * jumpVelocity, ForceMode2D.Impulse);
             jumpRequest = false;
         }
-        else
-        {   // Check if grounded
+        else    // Check if grounded
+        {
             grounded = (Physics2D.OverlapBox(groundCheckPosition.position, boxSize, 0f, whatIsGround) != null);
         }
 
@@ -85,13 +95,26 @@ public class CharacterMovement : MonoBehaviour
     private void Move()
     {
         // Clamp speed
-        if(Mathf.Abs(rb.velocity.x) > maxSpeed)
+        if(sprint)
+        {   // When sprinting
+            if(Mathf.Abs(rb.velocity.x) > maxSpeed * sprintMultiplier)
+            {
+                rb.velocity = new Vector2(Mathf.Sign(rb.velocity.x) * (maxSpeed * sprintMultiplier), rb.velocity.y);
+            }
+        }
+        else if(Mathf.Abs(rb.velocity.x) > maxSpeed)
         {
             rb.velocity = new Vector2(Mathf.Sign(rb.velocity.x) * maxSpeed, rb.velocity.y);
         }
 
         // Move character
-        rb.AddForce(new Vector2(directionX, 0f) * accelerationSpeed);
+        if(sprint) rb.AddForce(new Vector2(directionX, 0f) * (accelerationSpeed * sprintAccelerationMultiplier));
+        else rb.AddForce(new Vector2(directionX, 0f) * accelerationSpeed);
+
+
+        // Not sure if this should be called in Update or FixedUpdate ¯\_(ツ)_/¯
+        if(directionX > 0 && !isFacingRight) Flip();
+        else if(directionX < 0 && isFacingRight) Flip();
     }
 
     // Slow the character down if on the ground and not trying to move
@@ -99,5 +122,14 @@ public class CharacterMovement : MonoBehaviour
     {
         if(grounded && Mathf.Abs(Input.GetAxisRaw("Horizontal")) < 0.1f) rb.velocity = new Vector2(rb.velocity.x * speedDecay, rb.velocity.y);
         if(Mathf.Abs(rb.velocity.x) < minimumVelocity) rb.velocity = new Vector2(0f, rb.velocity.y);
+    }
+
+    private void Flip()
+    {
+        isFacingRight = !isFacingRight;
+
+		Vector3 theScale = transform.localScale;
+		theScale.x *= -1;
+		transform.localScale = theScale;
     }
 }
