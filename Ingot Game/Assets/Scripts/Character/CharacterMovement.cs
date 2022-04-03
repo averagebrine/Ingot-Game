@@ -9,6 +9,8 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private float maxSpeed;
     [SerializeField] private float speedDecay;
     [SerializeField] private float minimumVelocity;
+    [SerializeField] private float sprintMultiplier;
+    [SerializeField] private float sprintAccelerationMultiplier;
 
     [Header("Jump Config")]
     [SerializeField] private float jumpVelocity;

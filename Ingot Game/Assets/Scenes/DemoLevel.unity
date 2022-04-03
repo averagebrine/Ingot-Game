@@ -3812,6 +3812,8 @@ MonoBehaviour:
   maxSpeed: 7.5
   speedDecay: 0.75
   minimumVelocity: 0.5
+  sprintMultiplier: 1.4
+  sprintAccelerationMultiplier: 0.75
   jumpVelocity: 12
   fallMultiplier: 2.5
   lowJumpMultiplier: 2
