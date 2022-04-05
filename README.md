@@ -1,4 +1,6 @@
 # Ingot-Game
-Untitled ingot game developed by averagebrine of Ingot Cultists United
+The untitled ingot game will be an explorative platform & puzzle game, featuring 5 unique biomes to explore with many puzzles to solve!
 
-ඞඞඞඞඞඞඞඞඞ
+You can view the trello here to watch the development process and look at some concepts: https://trello.com/b/O2FQjpJI/samla-tacka-board-main
+
+ඞ ඞ ඞ
