@@ -14,14 +14,20 @@ public class CharacterMovement : MonoBehaviour
 
     [Header("Jump Config")]
     [SerializeField] private float jumpVelocity;
-    [SerializeField] private float fallMultiplier = 2.5f;
-    [SerializeField] private float lowJumpMultiplier = 2f;
+    [SerializeField] private float fallMultiplier;
+    [SerializeField] private float lowJumpMultiplier;
     [SerializeField] private float defaultGravity;
 
     [Header("Ground Check Config")]
     [SerializeField] private LayerMask whatIsGround;
     [SerializeField] private Transform groundCheckPosition;
     [SerializeField] private Vector2 boxSize;
+
+    [Header("Player Collider Config")]
+    [SerializeField] private Vector2 colliderSize;
+    [SerializeField] private Vector2 crouchSizeMultiplier;
+    [SerializeField] private float regOffset;
+    [SerializeField] private float crouchOffset;
 
     [Header("Misc")]
     [SerializeField] private Transform ppCam;
@@ -66,6 +72,7 @@ public class CharacterMovement : MonoBehaviour
         // Jump
         if(jumpRequest)
         {
+            // isJumping = true;
             rb.AddForce(Vector2.up * jumpVelocity, ForceMode2D.Impulse);
             jumpRequest = false;
         }
@@ -78,18 +85,17 @@ public class CharacterMovement : MonoBehaviour
         // Velocity set to 0 if jump is cancelled
         if(rb.velocity.y < 0)
         {
-            rb.gravityScale = fallMultiplier;
+            rb.gravityScale = defaultGravity * fallMultiplier;
         }
         else if(rb.velocity.y > 0 && !Input.GetButton("Jump"))
         {
-            rb.gravityScale = lowJumpMultiplier;
+            rb.gravityScale = defaultGravity * lowJumpMultiplier;
             rb.velocity = new Vector2(rb.velocity.x, 0f);
         }
         else
         {
             rb.gravityScale = defaultGravity;
         }
-
     }
 
     private void Move()
@@ -120,8 +126,8 @@ public class CharacterMovement : MonoBehaviour
     // Slow the character down if on the ground and not trying to move
     private void ApplyLinearSmooth()
     {
-        if(grounded && Mathf.Abs(Input.GetAxisRaw("Horizontal")) < 0.1f) rb.velocity = new Vector2(rb.velocity.x * speedDecay, rb.velocity.y);
-        if(Mathf.Abs(rb.velocity.x) < minimumVelocity) rb.velocity = new Vector2(0f, rb.velocity.y);
+        if(grounded && Mathf.Abs(Input.GetAxisRaw("Horizontal")) < 0.01f) rb.velocity = new Vector2(rb.velocity.x * speedDecay, rb.velocity.y);
+        if(Mathf.Abs(Input.GetAxisRaw("Horizontal")) < 0.01f && Mathf.Abs(rb.velocity.x) < minimumVelocity && Mathf.Abs(rb.velocity.x) > 0.01f) rb.velocity = new Vector2(0f, rb.velocity.y);
     }
 
     private void Flip()

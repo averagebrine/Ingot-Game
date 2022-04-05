@@ -4513,7 +4513,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.25}
+  m_Offset: {x: 0, y: -0.375}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4524,7 +4524,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.875, y: 1.5}
+  m_Size: {x: 0.875, y: 1.25}
   m_EdgeRadius: 0
 --- !u!212 &741919015
 SpriteRenderer:
@@ -4611,20 +4611,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   accelerationSpeed: 48
-  maxSpeed: 7.5
-  speedDecay: 0.75
-  minimumVelocity: 0.5
-  sprintMultiplier: 1.67
+  maxSpeed: 4.5
+  speedDecay: 0.5
+  minimumVelocity: 1
+  sprintMultiplier: 2.4
   sprintAccelerationMultiplier: 0.75
-  jumpVelocity: 12
-  fallMultiplier: 2.5
-  lowJumpMultiplier: 2
-  defaultGravity: 1.75
+  jumpVelocity: 13.75
+  fallMultiplier: 2
+  lowJumpMultiplier: 2.5
+  defaultGravity: 2.2
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
   groundCheckPosition: {fileID: 519767457}
-  boxSize: {x: 0.8649, y: 0.1}
+  boxSize: {x: 0.86, y: 0.1}
+  colliderSize: {x: 0.875, y: 1.25}
+  crouchSizeMultiplier: {x: 0, y: 0.6}
+  regOffset: -0.375
+  crouchOffset: -0.625
   ppCam: {fileID: 987754186}
 --- !u!1 &964762327
 GameObject:
