@@ -10,6 +10,7 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private float speedDecay;
     [SerializeField] private float minimumVelocity;
     [SerializeField] private float sprintMultiplier;
+    [SerializeField] private float crouchMultiplier;
     [SerializeField] private float sprintAccelerationMultiplier;
 
     [Header("Jump Config")]
@@ -23,11 +24,10 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private Transform groundCheckPosition;
     [SerializeField] private Vector2 boxSize;
 
-    [Header("Player Collider Config")]
-    [SerializeField] private Vector2 colliderSize;
-    [SerializeField] private Vector2 crouchSizeMultiplier;
-    [SerializeField] private float regOffset;
-    [SerializeField] private float crouchOffset;
+    [Header("Ceiling Check Config")]
+    [SerializeField] private Collider2D crouchDisableCollider; 
+    [SerializeField] private Transform ceilingCheckPosition;
+    [SerializeField] private Vector2 ceilingCheckSize;
 
     [Header("Misc")]
     [SerializeField] private Transform ppCam;
@@ -36,32 +36,51 @@ public class CharacterMovement : MonoBehaviour
     private Rigidbody2D rb;
     private float directionX;
     private bool sprint;
-    private float _drag;
     private bool isFacingRight = true;
 
     private bool grounded;
     private bool jumpRequest;
+    private bool crouchRequest;
+    private bool crouching;
 
-    // "Wake the fuck up" -bungot brine
+    private Animator animator;
+    private float characterX;
+    private float characterY;
+    private bool characterGrounded;
+    private bool characterJumping;
+
+    // "wake the fuck up" -bungot brine
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
     {
         directionX = Input.GetAxisRaw("Horizontal");
 
-        if(Input.GetButtonDown("Jump") && grounded)
-        {
-            jumpRequest = true;
-        }
+        if(!crouching && grounded && Input.GetButtonDown("Jump")) jumpRequest = true;
 
-        if(Input.GetButton("Sprint")) sprint = true;
+        if(grounded && Input.GetButton("Crouch")) crouchRequest = true;
+        else crouchRequest = false;
+
+        if(!crouching && Input.GetButton("Sprint")) sprint = true;
         else sprint = false;
 
-        // Until Cinemachine
+        // until Cinemachine
         ppCam.position = new Vector3(transform.position.x, transform.position.y, ppCam.position.z);
+
+        // unity tends to make the velocity a very small number instead of zero 
+        if(Mathf.Abs(rb.velocity.x) < 0.01f) animator.SetFloat("VelocityX", 0f);
+        else animator.SetFloat("VelocityX", Mathf.Abs(rb.velocity.x));
+
+        if(Mathf.Abs(rb.velocity.y) < 0.01f) animator.SetFloat("VelocityY", 0f);
+        else animator.SetFloat("VelocityY", rb.velocity.y);
+
+        // should this be done in FixedUpdate where the grounded bool is set?
+        animator.SetBool("Grounded", grounded);
+        animator.SetBool("Crouching", crouching);
     }
 
     private void FixedUpdate()
@@ -69,20 +88,18 @@ public class CharacterMovement : MonoBehaviour
         ApplyLinearSmooth();
         Move();
 
-        // Jump
-        if(jumpRequest)
+        if(!crouching && jumpRequest)
         {
-            // isJumping = true;
             rb.AddForce(Vector2.up * jumpVelocity, ForceMode2D.Impulse);
             jumpRequest = false;
         }
-        else    // Check if grounded
+        else
         {
             grounded = (Physics2D.OverlapBox(groundCheckPosition.position, boxSize, 0f, whatIsGround) != null);
         }
 
-        // Higher gravity when falling 
-        // Velocity set to 0 if jump is cancelled
+        // higher gravity when falling 
+        // velocity set to 0 if jump is cancelled --change that maybe
         if(rb.velocity.y < 0)
         {
             rb.gravityScale = defaultGravity * fallMultiplier;
@@ -90,22 +107,37 @@ public class CharacterMovement : MonoBehaviour
         else if(rb.velocity.y > 0 && !Input.GetButton("Jump"))
         {
             rb.gravityScale = defaultGravity * lowJumpMultiplier;
-            rb.velocity = new Vector2(rb.velocity.x, 0f);
+            // rb.velocity = new Vector2(rb.velocity.x, 0f);
         }
         else
         {
             rb.gravityScale = defaultGravity;
         }
+
+
+        if(grounded && crouchRequest) crouching = true;
+        else if(grounded && !crouchRequest && Physics2D.OverlapBox(ceilingCheckPosition.position, ceilingCheckSize, 0f, whatIsGround)) crouching = true;
+        else crouching = false;
+
+        if(crouching) crouchDisableCollider.enabled = false;
+        else crouchDisableCollider.enabled = true;
     }
 
     private void Move()
     {
-        // Clamp speed
+        // clamp speed
         if(sprint)
-        {   // When sprinting
+        {   // when sprinting
             if(Mathf.Abs(rb.velocity.x) > maxSpeed * sprintMultiplier)
             {
                 rb.velocity = new Vector2(Mathf.Sign(rb.velocity.x) * (maxSpeed * sprintMultiplier), rb.velocity.y);
+            }
+        }
+        else if(crouching)
+        {   // when crouching
+            if(Mathf.Abs(rb.velocity.x) > maxSpeed * crouchMultiplier)
+            {
+                rb.velocity = new Vector2(Mathf.Sign(rb.velocity.x) * (maxSpeed * crouchMultiplier), rb.velocity.y);
             }
         }
         else if(Mathf.Abs(rb.velocity.x) > maxSpeed)
@@ -113,17 +145,17 @@ public class CharacterMovement : MonoBehaviour
             rb.velocity = new Vector2(Mathf.Sign(rb.velocity.x) * maxSpeed, rb.velocity.y);
         }
 
-        // Move character
+        // move character
         if(sprint) rb.AddForce(new Vector2(directionX, 0f) * (accelerationSpeed * sprintAccelerationMultiplier));
         else rb.AddForce(new Vector2(directionX, 0f) * accelerationSpeed);
 
 
-        // Not sure if this should be called in Update or FixedUpdate ¯\_(ツ)_/¯
+        // not sure if this should be called in Update or FixedUpdate ¯\_(ツ)_/¯
         if(directionX > 0 && !isFacingRight) Flip();
         else if(directionX < 0 && isFacingRight) Flip();
     }
 
-    // Slow the character down if on the ground and not trying to move
+    // slow the character down if on the ground and not trying to move
     private void ApplyLinearSmooth()
     {
         if(grounded && Mathf.Abs(Input.GetAxisRaw("Horizontal")) < 0.01f) rb.velocity = new Vector2(rb.velocity.x * speedDecay, rb.velocity.y);
