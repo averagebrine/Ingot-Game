@@ -12,7 +12,7 @@ TagManager:
   - Water
   - UI
   - Character
-  - 
+  - Backdrop
   - 
   - 
   - 
@@ -38,6 +38,21 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Backdrop
+    uniqueID: 3259880671
+    locked: 0
+  - name: Background Tiles
+    uniqueID: 1688648701
+    locked: 0
+  - name: Background Objs
+    uniqueID: 4157008627
+    locked: 0
+  - name: Ground Tiles
+    uniqueID: 1549161103
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Foreground Objs
+    uniqueID: 374998651
     locked: 0

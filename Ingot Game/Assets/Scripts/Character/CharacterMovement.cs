@@ -30,8 +30,6 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private Vector2 ceilingCheckSize;
 
     [Header("Misc")]
-    [SerializeField] private Transform ppCam;
-    
 
     private Rigidbody2D rb;
     private float directionX;
@@ -48,8 +46,7 @@ public class CharacterMovement : MonoBehaviour
     private float characterY;
     private bool characterGrounded;
     private bool characterJumping;
-
-    // "wake the fuck up" -bungot brine
+    
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -67,9 +64,6 @@ public class CharacterMovement : MonoBehaviour
 
         if(!crouching && Input.GetButton("Sprint")) sprint = true;
         else sprint = false;
-
-        // until Cinemachine
-        ppCam.position = new Vector3(transform.position.x, transform.position.y, ppCam.position.z);
 
         // unity tends to make the velocity a very small number instead of zero 
         if(Mathf.Abs(rb.velocity.x) < 0.01f) animator.SetFloat("VelocityX", 0f);
