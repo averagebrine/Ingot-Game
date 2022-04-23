@@ -5,6 +5,7 @@ using UnityEngine;
 public class MusicPlayer : MonoBehaviour
 {
     [SerializeField] private bool playMusic = true;
+    
     void Awake()
     {
         DontDestroyOnLoad(gameObject);

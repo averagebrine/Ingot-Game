@@ -64,7 +64,6 @@ public class CharacterMovement : MonoBehaviour
         if(!crouching && Input.GetButton("Sprint")) sprint = true;
         else sprint = false;
 
-
         // wow, this is compact.
         if(Mathf.Abs(rb.velocity.x) < 0.01f) animator.SetFloat("VelocityX", 0f);
         else animator.SetFloat("VelocityX", Mathf.Abs(rb.velocity.x));
