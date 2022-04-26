@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DemoLevel
   m_EditorClassIdentifier: 
   templateScene: {fileID: 102900000, guid: 2cda990e2423bbf4892e6590ba056729, type: 3}
-  templateName: Demo Level
+  templateName: Level
   description: 
   preview: {fileID: 6442133909064800206}
   dependencies:
@@ -288,7 +288,7 @@ MonoBehaviour:
   - dependency: {fileID: 4895370470189564917, guid: fdc9035b5704dfc7c83e379e7e8f4455, type: 3}
     instantiationMode: 0
   templatePipeline: {fileID: 0}
-  addToDefaults: 0
+  addToDefaults: 1
 --- !u!28 &6442133909064800206
 Texture2D:
   m_ObjectHideFlags: 0

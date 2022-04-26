@@ -29,14 +29,16 @@ public class HomeInterfaceSaves : MonoBehaviour
     // Either start in the vault or the level you were saved in
     public void Load()
     {
-        Debug.Log("Loading slot " + slot);
+        Debug.Log("Loading from slot " + slot + ". . .");
 
         gameManager.LoadGame(slot);
     }
 
+    // Needs a confirmation dialog
     public void Delete()
     {
-        // Needs confirmation dialog
-        Debug.Log("Deleting slot " + slot);
+        Debug.Log("Deleting slot " + slot + ". . .");
+
+        SaveSystem.DeleteData(slot);
     }
 }

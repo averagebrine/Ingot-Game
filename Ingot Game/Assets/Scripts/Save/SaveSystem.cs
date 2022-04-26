@@ -35,4 +35,15 @@ public static class SaveSystem
             return new SavedData(manager);
         }
     }
+
+    public static void DeleteData(int slot)
+    {
+        string path = Application.persistentDataPath + "/savefile" + slot + ".sexyingotfile";
+        if (File.Exists(path))
+        {
+            File.Delete(path);
+            Debug.Log("Save file from slot " + slot + " has been deleted forever! (A long time!)");
+        }
+        else Debug.Log("Nothing to delete!");
+    }
 }

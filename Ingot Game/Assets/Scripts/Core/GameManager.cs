@@ -1,6 +1,5 @@
 using UnityEngine;
-using System.Collections;
-using System.IO;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -27,7 +26,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         // should probably use the input manager
-        if (Input.GetKeyDown(KeyCode.Escape) && Input.GetKey(KeyCode.LeftControl))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             Application.Quit();
             Debug.Log("Quit");
@@ -51,5 +50,9 @@ public class GameManager : MonoBehaviour
         {
             SaveSystem.LoadData(this, loadedSlot);;
         }
+
+        // Temporary, just load the next scene
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Debug.Log("Successfully loaded slot " + loadedSlot + "!");
     }
 }

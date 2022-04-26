@@ -6,7 +6,7 @@ SpriteAtlas:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Backgrounds
+  m_Name: Backdrops
   m_EditorData:
     serializedVersion: 2
     textureSettings:
@@ -63,5 +63,5 @@ SpriteAtlas:
   - monochrome_3
   - monochrome_1
   m_RenderDataMap: {}
-  m_Tag: Backgrounds
+  m_Tag: Backdrops
   m_IsVariant: 0

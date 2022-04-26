@@ -1,11 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Parallax : MonoBehaviour
 {
-    [SerializeField] private Camera cam;
-    [SerializeField] private Transform character;
+    private Camera cam;
+    private Transform character;
 
     private Vector2 startPos;
     float startZ;
@@ -17,6 +15,9 @@ public class Parallax : MonoBehaviour
 
     void Awake()
     {
+        cam = FindObjectOfType<Camera>();
+        character = FindObjectOfType<CharacterMovement>().transform;
+
         startPos = transform.position;
         startZ = transform.position.z;
     }
