@@ -419,15 +419,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coconut: {fileID: 21300000, guid: b036809b2d6694960a7e25bae2d41b53, type: 3}
-  storedData: []
-  data:
-    isNew: 1
-    slotDisplay: empty slot
-    levelsUnlocked: 0000
-    skinsUnlocked: 0000
-  slotDisplay: 
-  levelsUnlocked: 
-  skinsUnlocked: 
+  currentSlot: 0
+  savedData:
+  - isNew: 1
+    slotDisplay: One
+    levelsUnlocked: 
+    skinsUnlocked: 
+  - isNew: 1
+    slotDisplay: Two
+    levelsUnlocked: 
+    skinsUnlocked: 
+  - isNew: 1
+    slotDisplay: Three
+    levelsUnlocked: 
+    skinsUnlocked: 
 --- !u!4 &185627134
 Transform:
   m_ObjectHideFlags: 0

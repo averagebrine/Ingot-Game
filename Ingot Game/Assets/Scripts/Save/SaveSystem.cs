@@ -4,21 +4,19 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public static class SaveSystem
 {
-    public static void SaveData(int slot)
+    public static void SaveData(GameManager manager, int slot)
     {
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + "/savefile" + slot + ".sexyingotfile";
         FileStream stream = new FileStream(path, FileMode.Create);
 
-        SavedData data = new SavedData();
+        SavedData data = new SavedData(manager);
 
         formatter.Serialize(stream, data);
         stream.Close();
-
-        Debug.Log("Successfully saved at: " + path + "!");
     }
 
-    public static SavedData LoadData(int slot)
+    public static SavedData LoadData(GameManager manager, int slot)
     {
         string path = Application.persistentDataPath + "/savefile" + slot + ".sexyingotfile";
         if (File.Exists(path))
@@ -29,13 +27,12 @@ public static class SaveSystem
             SavedData data = formatter.Deserialize(stream) as SavedData;
             stream.Close();
 
-            Debug.Log("Successfully loaded data from " + path + "!");
             return data;
         }
         else
         {
-            Debug.LogError("Save file not found in " + path);
-            return null;
+            Debug.LogWarning("Save file not found in " + path + ", creating an empty one!");
+            return new SavedData(manager);
         }
     }
 }

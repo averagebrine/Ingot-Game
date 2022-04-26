@@ -26,20 +26,17 @@ public class HomeInterfaceSaves : MonoBehaviour
         slot = 3;
     }
 
+    // Either start in the vault or the level you were saved in
     public void Load()
     {
-        gameManager.Load(slot);
-        // Either start in the vault or the level you were saved in
+        Debug.Log("Loading slot " + slot);
+
+        gameManager.LoadGame(slot);
     }
 
     public void Delete()
     {
-        if (gameManager.storedData[slot].isNew == true) Debug.Log("Nothing to delete");
-        else 
-        {
-            // Needs a confirmation dialog
-            gameManager.storedData[slot] = new SavedData();
-            Debug.Log("Deleted slot data");
-        }
+        // Needs confirmation dialog
+        Debug.Log("Deleting slot " + slot);
     }
 }
