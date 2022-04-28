@@ -5,9 +5,21 @@ using UnityEngine;
 public class MusicPlayer : MonoBehaviour
 {
     [SerializeField] private bool playMusic = true;
+
+    public static MusicPlayer instance;
     
     void Awake()
     {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         DontDestroyOnLoad(gameObject);
 
         if(playMusic) StartCoroutine(Music());

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HomeInterfaceOptions : MonoBehaviour
+public class GameInterfacePauseOptions : MonoBehaviour
 {
     [HideInInspector] public int volume;
 

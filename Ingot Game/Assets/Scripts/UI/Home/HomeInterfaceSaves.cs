@@ -3,12 +3,22 @@ using UnityEngine.UI;
 
 public class HomeInterfaceSaves : MonoBehaviour
 {
-    [SerializeField] private GameManager gameManager;
+    private GameManager gameManager;
     private int slot = 2;
+
+    [SerializeField] private Button backButton;
 
     void Awake()
     {
         gameManager = FindObjectOfType<GameManager>();
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            backButton.onClick.Invoke();
+        }
     }
 
     public void Slot1()
