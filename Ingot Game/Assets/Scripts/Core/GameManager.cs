@@ -37,6 +37,8 @@ public class GameManager : MonoBehaviour
 
     public void LoadGame(int slot)
     {
+        if(slot == -1) return;
+
         loadedSlot = slot;
         SavedData data = SaveSystem.LoadData(this, loadedSlot);
 
@@ -61,6 +63,7 @@ public class GameManager : MonoBehaviour
 
     public void SaveGame()
     {
+        // I don't think -1 is possible here anymore :thinking:
         if(loadedSlot == -1) return;
     
         SaveSystem.SaveData(this, loadedSlot);

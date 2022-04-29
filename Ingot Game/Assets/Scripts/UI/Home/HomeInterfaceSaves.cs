@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class HomeInterfaceSaves : MonoBehaviour
 {
     private GameManager gameManager;
-    private int slot = 2;
+    private int slot = -1;
 
     [SerializeField] private Button backButton;
 
@@ -39,16 +39,17 @@ public class HomeInterfaceSaves : MonoBehaviour
     // Either start in the vault or the level you were saved in
     public void Load()
     {
-        Debug.Log("Loading from slot " + slot + ". . .");
-
         gameManager.LoadGame(slot);
     }
 
     // Needs a confirmation dialog
     public void Delete()
     {
-        Debug.Log("Deleting slot " + slot + ". . .");
-
         SaveSystem.DeleteData(slot);
+    }
+
+    public void Back()
+    {
+        slot = -1;
     }
 }
