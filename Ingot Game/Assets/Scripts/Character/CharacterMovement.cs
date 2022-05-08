@@ -1,6 +1,6 @@
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
 {
@@ -34,15 +34,16 @@ public class CharacterMovement : MonoBehaviour
     // components
     private Rigidbody2D rb;
     private Animator animator;
-    private float directionX;
-    private bool sprint;
-    private bool isFacingRight = true;
 
-    // logic
+    // internal variables
+    private float directionX;
     private bool grounded;
+    private bool sprint;
     private bool jumpRequest;
     private bool crouchRequest;
     private bool crouching;
+    private bool isFacingRight = true;
+    private float fallingTimer;
     
     private void Awake()
     {
@@ -63,6 +64,11 @@ public class CharacterMovement : MonoBehaviour
 
         if(!crouching && Input.GetButton("Sprint")) sprint = true;
         else sprint = false;
+
+        // temporary screen shake
+        if(!grounded && rb.velocity.y < 0f) fallingTimer += Time.deltaTime;
+        if(grounded && fallingTimer > 1f) FindObjectOfType<ShakeMachine>().Shake();
+        if (grounded) fallingTimer = 0f;
 
         // wow, this is compact.
         if(Mathf.Abs(rb.velocity.x) < 0.01f) animator.SetFloat("VelocityX", 0f);
@@ -124,7 +130,7 @@ public class CharacterMovement : MonoBehaviour
             {
                 rb.velocity = new Vector2(Mathf.Sign(rb.velocity.x) * (maxSpeed * crouchMultiplier), rb.velocity.y);
             }
-        }
+        }   // when not sprinting or crouching
         else if(Mathf.Abs(rb.velocity.x) > maxSpeed)
         {
             rb.velocity = new Vector2(Mathf.Sign(rb.velocity.x) * maxSpeed, rb.velocity.y);

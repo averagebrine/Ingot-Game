@@ -101,6 +101,14 @@ SpriteAtlas:
   - {fileID: -4620618374986787015, guid: 64c935b42808387e4bd771a448e2794b, type: 3}
   - {fileID: 8534802578278658684, guid: 64c935b42808387e4bd771a448e2794b, type: 3}
   - {fileID: -5033207005110234430, guid: 64c935b42808387e4bd771a448e2794b, type: 3}
+  - {fileID: 4058500632094824262, guid: 9405871e47bf790878c6ac5bc237beab, type: 3}
+  - {fileID: 5899847947390980637, guid: 9405871e47bf790878c6ac5bc237beab, type: 3}
+  - {fileID: 7666422293913663921, guid: 9405871e47bf790878c6ac5bc237beab, type: 3}
+  - {fileID: 6661852246698698781, guid: 9405871e47bf790878c6ac5bc237beab, type: 3}
+  - {fileID: -6219196203134961139, guid: 9405871e47bf790878c6ac5bc237beab, type: 3}
+  - {fileID: 4697740505883481099, guid: 9405871e47bf790878c6ac5bc237beab, type: 3}
+  - {fileID: -2016465152443831564, guid: 9405871e47bf790878c6ac5bc237beab, type: 3}
+  - {fileID: -4160352514087004348, guid: 9405871e47bf790878c6ac5bc237beab, type: 3}
   m_PackedSpriteNamesToIndex:
   - bot_3
   - bot_2
@@ -154,6 +162,14 @@ SpriteAtlas:
   - brine_7
   - brine_4
   - brine_5
+  - bob_1
+  - bob_0
+  - bob_3
+  - bob_2
+  - bob_5
+  - bob_4
+  - bob_7
+  - bob_6
   m_RenderDataMap: {}
   m_Tag: Characters
   m_IsVariant: 0
