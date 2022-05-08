@@ -10635,7 +10635,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1020067137
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10772,6 +10772,7 @@ MonoBehaviour:
   groundCheckPosition: {fileID: 1983226617}
   boxSize: {x: 0.875, y: 0.75}
   snailHyperness: 2
+  snailTrust: 0
 --- !u!95 &1020067142
 Animator:
   serializedVersion: 3
