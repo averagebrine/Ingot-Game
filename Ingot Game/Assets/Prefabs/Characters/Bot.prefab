@@ -357,7 +357,7 @@ MonoBehaviour:
   defaultGravity: 2.2
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 264
   groundCheckPosition: {fileID: 2208411455871648080}
   boxSize: {x: 0.86, y: 0.1}
   crouchDisableCollider: {fileID: 2208411455112465882}

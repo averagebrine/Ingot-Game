@@ -10629,13 +10629,13 @@ GameObject:
   - component: {fileID: 1020067139}
   - component: {fileID: 1020067141}
   - component: {fileID: 1020067142}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bob
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1020067137
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19512,7 +19512,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1983226617}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19946,10 +19946,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1886879288, guid: 4e664e3b97157072d8b0037a49ea4394, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.00000023841858
-      objectReference: {fileID: 0}
     - target: {fileID: 2208411455422209574, guid: 4e664e3b97157072d8b0037a49ea4394, type: 3}
       propertyPath: m_Name
       value: Bot
@@ -20111,10 +20107,6 @@ PrefabInstance:
     - target: {fileID: 3182209327581855381, guid: b13de535616c704cfa1da077f03b0d8a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5671472041025258969, guid: b13de535616c704cfa1da077f03b0d8a, type: 3}
-      propertyPath: m_ImpulseDefinition.m_TimeEnvelope.m_DecayTime
-      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b13de535616c704cfa1da077f03b0d8a, type: 3}

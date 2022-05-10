@@ -70,7 +70,7 @@ public class CharacterMovement : MonoBehaviour
         if(grounded && fallingTimer > 1f) FindObjectOfType<ShakeMachine>().Shake();
         if (grounded) fallingTimer = 0f;
 
-        // wow, this is compact.
+        // totally unreadable animation code
         if(Mathf.Abs(rb.velocity.x) < 0.01f) animator.SetFloat("VelocityX", 0f);
         else animator.SetFloat("VelocityX", Mathf.Abs(rb.velocity.x));
         if(Mathf.Abs(rb.velocity.y) < 0.01f) animator.SetFloat("VelocityY", 0f);
