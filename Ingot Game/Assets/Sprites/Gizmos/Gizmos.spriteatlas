@@ -49,10 +49,8 @@ SpriteAtlas:
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
-  - {fileID: 6982349361813185663, guid: ebc27926470f2f6b1b14b36111d0a5c8, type: 3}
   - {fileID: 1244476889673583485, guid: ebc27926470f2f6b1b14b36111d0a5c8, type: 3}
   m_PackedSpriteNamesToIndex:
-  - chain_1
   - chain_0
   m_RenderDataMap: {}
   m_Tag: Gizmos

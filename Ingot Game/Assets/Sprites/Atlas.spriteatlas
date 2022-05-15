@@ -54,6 +54,8 @@ SpriteAtlas:
   - {fileID: 1242561999074003851, guid: 29df7e3033caff04c8bd38304253ac15, type: 3}
   - {fileID: -2711330452344146806, guid: 29df7e3033caff04c8bd38304253ac15, type: 3}
   - {fileID: -6783560729091901194, guid: 29df7e3033caff04c8bd38304253ac15, type: 3}
+  - {fileID: 21300000, guid: 08a8322179490435faa3bfc08c5f709f, type: 3}
+  - {fileID: 21300000, guid: 7dfe9833b2dba9a7f967cebf01f65f16, type: 3}
   - {fileID: -7094864526527466008, guid: b2e6c843d4d9c66388f4d7ff649ac774, type: 3}
   - {fileID: 7770358622783400282, guid: b2e6c843d4d9c66388f4d7ff649ac774, type: 3}
   - {fileID: 397827650320327261, guid: b2e6c843d4d9c66388f4d7ff649ac774, type: 3}
@@ -106,11 +108,15 @@ SpriteAtlas:
   - {fileID: -4620618374986787015, guid: 64c935b42808387e4bd771a448e2794b, type: 3}
   - {fileID: 8534802578278658684, guid: 64c935b42808387e4bd771a448e2794b, type: 3}
   - {fileID: -5033207005110234430, guid: 64c935b42808387e4bd771a448e2794b, type: 3}
-  - {fileID: 21300000, guid: 1cb76965e516c0548947e23d578484e2, type: 3}
+  - {fileID: -8621340036335784938, guid: 1cb76965e516c0548947e23d578484e2, type: 3}
+  - {fileID: -7066213243443288471, guid: 1cb76965e516c0548947e23d578484e2, type: 3}
+  - {fileID: -8071530004968135163, guid: 1cb76965e516c0548947e23d578484e2, type: 3}
+  - {fileID: 5363452520104255726, guid: 1cb76965e516c0548947e23d578484e2, type: 3}
   - {fileID: 5367924299802472846, guid: 2e95dfd6a5efed0d6b4089dc47b6bfdc, type: 3}
   - {fileID: 9100799134128117637, guid: 2e95dfd6a5efed0d6b4089dc47b6bfdc, type: 3}
   - {fileID: -3616783715991866677, guid: 2e95dfd6a5efed0d6b4089dc47b6bfdc, type: 3}
   - {fileID: -4729906563581303471, guid: 2e95dfd6a5efed0d6b4089dc47b6bfdc, type: 3}
+  - {fileID: 21300000, guid: e3cc5c07f8b5a94ee8427b6b33471571, type: 3}
   - {fileID: 7590063604831475136, guid: 46987b398ef52bf2a976bc4cff13c48b, type: 3}
   - {fileID: -6868448752762655363, guid: 46987b398ef52bf2a976bc4cff13c48b, type: 3}
   - {fileID: -351115333949367665, guid: 46987b398ef52bf2a976bc4cff13c48b, type: 3}
@@ -307,6 +313,8 @@ SpriteAtlas:
   - mimic_original_2
   - mimic_original_1
   - mimic_original_0
+  - worm
+  - bat
   - bot_3
   - bot_2
   - bot_1
@@ -359,11 +367,15 @@ SpriteAtlas:
   - brine_7
   - brine_4
   - brine_5
-  - mimic_final
+  - mimic_source_3
+  - mimic_source_2
+  - mimic_source_1
+  - mimic_source_0
   - mimic_mapped_3
   - mimic_mapped_2
   - mimic_mapped_1
   - mimic_mapped_0
+  - roads
   - monochrome_61
   - monochrome_60
   - monochrome_63

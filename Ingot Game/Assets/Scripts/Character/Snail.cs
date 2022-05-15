@@ -4,6 +4,8 @@ using System.Collections.Generic;
 
 public class Snail : MonoBehaviour
 {
+    #region Variables
+
     [Header("Movement Config")]
     [SerializeField] private float accelerationSpeed;
     [SerializeField] private float maxSpeed;
@@ -31,7 +33,11 @@ public class Snail : MonoBehaviour
     private bool isFacingRight;
     private float fallingTimer;
     private bool hidden;
-    private bool waiting;
+    private bool canAction;
+
+    #endregion
+
+    #region Methods
 
     private void Awake()
     {
@@ -40,36 +46,24 @@ public class Snail : MonoBehaviour
 
         isFacingRight = true;
 
-        if(snailHyperness == 0f)
-        {
-            snailHyperness = Random.Range(1f, 2.5f);
-            Debug.Log("Snail Hyperness: " + snailHyperness);
-        }
+        GeneratePersonality();
 
-        if(snailTrust == 0f)
-        {
-            snailTrust = Random.Range(0.75f, 2.5f);
-            Debug.Log("Snail Trust: " + snailTrust);
-        }
-
-        StartCoroutine(ChooseAction());
+        canAction = true;
     }
 
     private void Update()
     {
-        // if we aren't doing anything, do something
-        if(!waiting && Mathf.Abs(rb.velocity.x) < 0.01f && Mathf.Abs(rb.velocity.y) < 0.01f)
-        {
-            waiting = true;
-
-            StartCoroutine(ChooseAction());
-        }
-
         // animate
         if(Mathf.Abs(rb.velocity.x) > 0.01f) animator.SetFloat("VelocityX", 0f);
         else animator.SetFloat("VelocityX", Mathf.Abs(rb.velocity.x));
 
         animator.SetBool("Grounded", grounded);
+
+        if (canAction)
+        {
+            StartCoroutine(Action());
+            canAction = false;
+        }
     }
 
     private void FixedUpdate()
@@ -87,6 +81,138 @@ public class Snail : MonoBehaviour
             grounded = (Physics2D.OverlapBox(groundCheckPosition.position, boxSize, 0f, whatIsGround) != null);
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        if(col.gameObject.tag == "Player")
+        {
+            if(snailTrust >= 3f)
+            {
+                return;
+            }
+
+            if(Random.Range(0.2f, 3f ) > snailTrust)
+            {
+                if(!hidden) StartCoroutine(ShellHide());
+
+            }
+        }
+    }
+
+    #endregion
+
+    #region Snail Actions
+
+    private void GeneratePersonality()
+    {
+        if(snailHyperness == 0f)
+        {
+            snailHyperness = Random.Range(0.5f, 3f);
+        }
+
+        if(snailTrust == 0f)
+        {
+            snailTrust = Random.Range(0.2f, 2f);
+        }
+    }
+
+    IEnumerator Action()
+    {
+        yield return new WaitForSeconds(Random.Range(5f, 20f) / snailHyperness);
+
+        int action = Random.Range(0, 5);
+
+        switch (action)
+        {
+            case 0:
+                StartCoroutine(ShellHide());
+                break;
+            case 1:
+                StartCoroutine(FlipLeft());
+                break;
+            case 2:
+                StartCoroutine(FlipRight());
+                break;
+            case 3:
+                StartCoroutine(Progress());
+                break;
+            case 4:
+                StartCoroutine(Progress());
+                break;
+            case 5:
+                StartCoroutine(Action());
+                break;
+        }
+    }
+
+    IEnumerator Progress()
+    {
+        directionX = 0f;
+
+        if (Random.Range(0, 2) == 0) directionX = 1f;
+        else directionX = -1f;
+
+        yield return new WaitForSeconds(Random.Range(0.25f, 2.0f) * snailHyperness);
+
+        directionX = 0f;
+
+        canAction = true;
+    }
+
+    IEnumerator ShellHide()
+    {
+        canAction = false;
+
+        animator.SetBool("Hidden", true);
+        animator.SetBool("Hiding", true);
+
+        hidden = true;
+
+        float wait = Random.Range(10f, 30f) / snailTrust;
+
+        yield return new WaitForSeconds(wait);
+
+        StartCoroutine(ShellEscape());
+    }
+
+    IEnumerator ShellEscape()
+    {        
+        animator.SetBool("Escaping", true);
+
+        hidden = false;
+
+        yield return new WaitForSeconds(Random.Range(5f, 10f) / snailHyperness);
+
+        canAction = true;
+    }
+
+    IEnumerator FlipLeft()
+    {
+        rb.velocity = Vector2.zero;
+
+        if(Mathf.Abs(rb.rotation % 360) <= 5f || Mathf.Abs(rb.rotation % 360) >= 355) jumpRequest = true;
+        rb.AddTorque(Random.Range(0.80f, 0.70f), ForceMode2D.Impulse);
+
+        yield return new WaitForSeconds(Random.Range(1f, 5.0f) / snailHyperness);
+
+        canAction = true;
+    }
+
+    IEnumerator FlipRight()
+    {
+        rb.velocity = Vector2.zero;
+
+        if(Mathf.Abs(rb.rotation % 360) <= 5f || Mathf.Abs(rb.rotation % 360) >= 355) jumpRequest = true;
+        rb.AddTorque(Random.Range(-0.80f, -0.70f), ForceMode2D.Impulse);
+
+        yield return new WaitForSeconds(Random.Range(1f, 5.0f) / snailHyperness);
+
+        canAction = true;
+    }
+
+    #endregion
+
+    #region Movement
 
     private void Move()
     {
@@ -116,100 +242,6 @@ public class Snail : MonoBehaviour
 		transform.localScale = theScale;
     }
 
-    #region Snail Actions
-
-    IEnumerator ChooseAction()
-    {
-        Debug.Log("ChooseAction called");
-
-        if(hidden) 
-        {
-            yield return new WaitForSeconds(Random.Range(snailHyperness, 30f) / snailTrust);
-
-            ShellToggle();
-            
-            yield break;
-        }
-        else
-        {
-            yield return new WaitForSeconds(Random.Range(snailHyperness, 18f) / snailHyperness);
-        }
-
-        Debug.Log("Now performing action");
-
-        int action = Random.Range(0, 3);
-
-        switch (action)
-        {
-            case 0:
-                StartCoroutine(Progress());
-                break;
-            case 1:
-                ShellToggle();
-                break;
-            case 2:
-                FlipLeft();
-                break;
-            case 3:
-                FlipRight();
-                break;
-        }   
-    }
-
-    IEnumerator Progress()
-    {
-        directionX = 0f;
-
-        if (Random.Range(0, 2) == 0) directionX = 1f;
-        else directionX = -1f;
-
-        yield return new WaitForSeconds(Random.Range(0.25f, 2.0f) * snailHyperness);
-
-        directionX = 0f;
-
-        waiting = false;
-    }
-
-    public void ShellToggle()
-    {
-        if (!hidden)
-        {
-            animator.SetBool("Hidden", true);
-            animator.SetBool("Hiding", true);
-
-            hidden = true;
-        }
-        else
-        {
-            animator.SetBool("Escaping", true);
-            hidden = false;
-        }  
-        
-        waiting = false;   
-    }
-
-    public void FlipRight()
-    {
-        rb.velocity = Vector2.zero;
-
-        if(Mathf.Abs(rb.rotation % 360) <= 5f || Mathf.Abs(rb.rotation % 360) >= 355) jumpRequest = true;
-        rb.AddTorque(-0.75f, ForceMode2D.Impulse);
-
-        waiting = false;
-    }
-
-    public void FlipLeft()
-    {
-        rb.velocity = Vector2.zero;
-
-        if(Mathf.Abs(rb.rotation % 360) <= 5f || Mathf.Abs(rb.rotation % 360) >= 355) jumpRequest = true;
-        rb.AddTorque(0.75f, ForceMode2D.Impulse);
-
-        waiting = false;
-    }
-
-    #endregion
-
     public void Escaped()
     {
         animator.SetBool("Escaping", false);
@@ -220,4 +252,6 @@ public class Snail : MonoBehaviour
     {
         animator.SetBool("Hiding", false);
     }
+
+    #endregion
 }

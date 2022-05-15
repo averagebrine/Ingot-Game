@@ -186,8 +186,8 @@ GameObject:
   - component: {fileID: 2208411455112465880}
   - component: {fileID: 2208411455112465883}
   m_Layer: 6
-  m_Name: Character
-  m_TagString: Untagged
+  m_Name: Brine
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -327,7 +327,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1.75
-  m_Material: {fileID: 6200000, guid: 373e5a692141744379e804c50f271bee, type: 2}
+  m_Material: {fileID: 6200000, guid: 775782c84172f2a4a9f4712e9173b475, type: 2}
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
@@ -357,7 +357,7 @@ MonoBehaviour:
   defaultGravity: 2.2
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 264
+    m_Bits: 776
   groundCheckPosition: {fileID: 2208411455871648080}
   boxSize: {x: 0.86, y: 0.1}
   crouchDisableCollider: {fileID: 2208411455112465882}
