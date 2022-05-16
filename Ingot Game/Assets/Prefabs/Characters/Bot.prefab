@@ -184,6 +184,7 @@ GameObject:
   - component: {fileID: 2208411455112465879}
   - component: {fileID: 2208411455112465881}
   - component: {fileID: 2208411455112465880}
+  - component: {fileID: 5011159150171096193}
   - component: {fileID: 2208411455112465883}
   m_Layer: 6
   m_Name: Brine
@@ -357,12 +358,29 @@ MonoBehaviour:
   defaultGravity: 2.2
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 776
+    m_Bits: 2824
   groundCheckPosition: {fileID: 2208411455871648080}
   boxSize: {x: 0.86, y: 0.1}
   crouchDisableCollider: {fileID: 2208411455112465882}
   ceilingCheckPosition: {fileID: 2208411455224649704}
   ceilingCheckSize: {x: 0.86, y: 0.5}
+--- !u!114 &5011159150171096193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2208411455112465877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cae3b5fa1b9ac083d930220858a16af9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectedStacks: []
+  collectionRange: {x: 2, y: 2}
+  whatIsIngot:
+    serializedVersion: 2
+    m_Bits: 3072
 --- !u!95 &2208411455112465883
 Animator:
   serializedVersion: 3

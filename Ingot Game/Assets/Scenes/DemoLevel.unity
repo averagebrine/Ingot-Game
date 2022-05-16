@@ -20439,17 +20439,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3429019995212070105, guid: afe2329ce876e15d6a399c12ec708305, type: 3}
+      propertyPath: collidable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4192200984286741067, guid: afe2329ce876e15d6a399c12ec708305, type: 3}
       propertyPath: m_RootOrder
       value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4192200984286741067, guid: afe2329ce876e15d6a399c12ec708305, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12
+      value: -18
       objectReference: {fileID: 0}
     - target: {fileID: 4192200984286741067, guid: afe2329ce876e15d6a399c12ec708305, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.25
+      value: 10.25
       objectReference: {fileID: 0}
     - target: {fileID: 4192200984286741067, guid: afe2329ce876e15d6a399c12ec708305, type: 3}
       propertyPath: m_LocalPosition.z
