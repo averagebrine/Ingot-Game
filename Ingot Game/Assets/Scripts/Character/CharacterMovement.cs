@@ -97,15 +97,13 @@ public class CharacterMovement : MonoBehaviour
         }
 
 
-        // this isn't the best way to do this, but it works
         // if the lowJumpMultiplier is too high, the character might fall too quickly :/
         if(rb.velocity.y < 0) rb.gravityScale = defaultGravity * fallMultiplier;
         else if(rb.velocity.y > 0 && !Input.GetButton("Jump")) rb.gravityScale = defaultGravity * lowJumpMultiplier;
         else rb.gravityScale = defaultGravity;
 
 
-        // sneak
-        // compact if statements are hard to read
+        // sneaky
         if(grounded && crouchRequest) crouching = true;
         else if(grounded && !crouchRequest && Physics2D.OverlapBox(ceilingCheckPosition.position, ceilingCheckSize, 0f, whatIsGround)) crouching = true;
         else crouching = false;

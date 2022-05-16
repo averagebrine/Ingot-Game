@@ -5,6 +5,8 @@ using UnityEngine;
 public class ButtonGizmo : MonoBehaviour
 {
     [SerializeField] private LayerMask whatCanActivate;
+    [SerializeField] private Transform raycastPosition;
+    [SerializeField] private float radius = 0.01f;
     private bool active = false;
     private Animator animator;
 
@@ -20,7 +22,7 @@ public class ButtonGizmo : MonoBehaviour
 
     private void DetectActivation()
     {
-        bool inputDetected = Physics2D.OverlapBox(transform.position, new Vector2(0.875f, 0.01f), 0, whatCanActivate);
+        bool inputDetected = Physics2D.OverlapBox(raycastPosition.position, new Vector2(0.875f, radius), 0, whatCanActivate);
 
         if (!inputDetected && active) Activate();
         else if (inputDetected && !active) Activate();
