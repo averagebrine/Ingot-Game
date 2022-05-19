@@ -185,9 +185,10 @@ GameObject:
   - component: {fileID: 2208411455112465881}
   - component: {fileID: 2208411455112465880}
   - component: {fileID: 5011159150171096193}
+  - component: {fileID: 4571562991304839818}
   - component: {fileID: 2208411455112465883}
   m_Layer: 6
-  m_Name: Brine
+  m_Name: Base
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -228,7 +229,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6b26a9ec3aff1500d8bb4492200362b4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -249,7 +250,7 @@ SpriteRenderer:
   m_SortingLayerID: -444354907
   m_SortingLayer: 1
   m_SortingOrder: 25
-  m_Sprite: {fileID: 4053712741101770187, guid: 64c935b42808387e4bd771a448e2794b, type: 3}
+  m_Sprite: {fileID: 6584856680018220751, guid: d884c88cd0e62460f8e7e1e1a00bac93, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -381,6 +382,28 @@ MonoBehaviour:
   whatIsIngot:
     serializedVersion: 2
     m_Bits: 3072
+--- !u!114 &4571562991304839818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2208411455112465877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93bcedb17e17758dfbdc466f3d3ecb22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characters:
+  - name: Brine
+    texture: {fileID: 2800000, guid: 35f980b9a5f2da5d9989ba4b3a25dfce, type: 3}
+  - name: Cereal
+    texture: {fileID: 2800000, guid: 5216aea45fddbe10cbcae542388c5851, type: 3}
+  - name: Methape
+    texture: {fileID: 2800000, guid: 2af55778ae1f8aa60bcf2e1a5bd543b1, type: 3}
+  - name: Rainbow Johnson
+    texture: {fileID: 2800000, guid: 3d4c7e46fccecf747a29e9ca1aff133c, type: 3}
+  characterMaterial: {fileID: 2100000, guid: 6b26a9ec3aff1500d8bb4492200362b4, type: 2}
 --- !u!95 &2208411455112465883
 Animator:
   serializedVersion: 3
