@@ -33,15 +33,16 @@ public class CharacterMovement : MonoBehaviour
 
     // components
     private Rigidbody2D rb;
-    private Animator animator;
+
+
+    [HideInInspector] public bool grounded;
+    [HideInInspector] public bool crouching;
 
     // internal variables
     private float directionX;
-    private bool grounded;
     private bool sprint;
     private bool jumpRequest;
     private bool crouchRequest;
-    private bool crouching;
     private bool isFacingRight = true;
     private float fallingTimer;
     
@@ -49,7 +50,6 @@ public class CharacterMovement : MonoBehaviour
     {
         // initialize
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -69,15 +69,6 @@ public class CharacterMovement : MonoBehaviour
         if(!grounded && rb.velocity.y < 0f) fallingTimer += Time.deltaTime;
         if(grounded && fallingTimer > 1f) FindObjectOfType<ShakeMachine>().Shake();
         if (grounded) fallingTimer = 0f;
-
-        // totally unreadable animation code
-        if(Mathf.Abs(rb.velocity.x) < 0.01f) animator.SetFloat("VelocityX", 0f);
-        else animator.SetFloat("VelocityX", Mathf.Abs(rb.velocity.x));
-        if(Mathf.Abs(rb.velocity.y) < 0.01f) animator.SetFloat("VelocityY", 0f);
-        else animator.SetFloat("VelocityY", rb.velocity.y);
-
-        animator.SetBool("Grounded", grounded);
-        animator.SetBool("Crouching", crouching);
     }
 
     private void FixedUpdate()

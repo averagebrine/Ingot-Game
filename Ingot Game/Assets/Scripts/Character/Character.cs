@@ -1,10 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
-public class Character
+[CreateAssetMenu(fileName = "New Character", menuName = "Character")]
+public class Character : ScriptableObject
 {
-    public string name;
-    public Texture2D texture;
+    public string characterName;
+
+    public Texture2D baseTexture;
+    public Eyes defaultEyes;
+    public Hat defaultHat;
 }

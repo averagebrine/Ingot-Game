@@ -166,5 +166,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: iron
   stationary: 1
-  collidable: 0
+  collidable: 1
   animates: 1

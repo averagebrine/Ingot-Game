@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e016e12ae8ed4ed2497d9985d0a900fd, type: 3}
+  m_Name: cereal
+  m_EditorClassIdentifier: 
+  characterName: Cereal
+  baseTexture: {fileID: 2800000, guid: 5216aea45fddbe10cbcae542388c5851, type: 3}
+  defaultEyes: {fileID: 0}
+  defaultHat: {fileID: 11400000, guid: 20e3fa69148592ffab2e5398b886da49, type: 2}

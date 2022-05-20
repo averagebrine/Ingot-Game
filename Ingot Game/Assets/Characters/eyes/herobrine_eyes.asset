@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e4394edf8860d3a99159329d1adfb36, type: 3}
+  m_Name: herobrine_eyes
+  m_EditorClassIdentifier: 
+  eyesName: Herobrine Eyes
+  eyesTexture: {fileID: 2800000, guid: 4830bd4e413c8da7c95703e98c68fcd3, type: 3}
+  wideTexture: {fileID: 2800000, guid: 6d564310786c84db7aedfc0a0f5f771e, type: 3}
+  collectable: 0
