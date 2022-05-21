@@ -1,0 +1,1184 @@
+fileFormatVersion: 2
+guid: d509e5d8c4c73322c9ef47f02fc815f3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -991795688092009725
+    second: cape_front_animation_0
+  - first:
+      213: -3563966993400100608
+    second: cape_front_animation_1
+  - first:
+      213: 79380216700303580
+    second: cape_front_animation_2
+  - first:
+      213: 6940385458556592856
+    second: cape_front_animation_3
+  - first:
+      213: 4426107328729953034
+    second: cape_front_animation_4
+  - first:
+      213: -5822337530804410493
+    second: cape_front_animation_5
+  - first:
+      213: 49811812765145991
+    second: cape_front_animation_6
+  - first:
+      213: 8107823243675142373
+    second: cape_front_animation_7
+  - first:
+      213: 331844570118356768
+    second: cape_front_animation_8
+  - first:
+      213: -3145669870814855735
+    second: cape_front_animation_9
+  - first:
+      213: 8022253900346791458
+    second: cape_front_animation_10
+  - first:
+      213: 4265001069806114663
+    second: cape_front_animation_11
+  - first:
+      213: 5794739731889558983
+    second: cape_front_animation_12
+  - first:
+      213: 1267732319113283651
+    second: cape_front_animation_13
+  - first:
+      213: 3825393929080699429
+    second: cape_front_animation_14
+  - first:
+      213: -3005464302632751738
+    second: cape_front_animation_15
+  - first:
+      213: -3500551795854765817
+    second: cape_front_animation_16
+  - first:
+      213: 4113686889363325414
+    second: cape_front_animation_17
+  - first:
+      213: 6183086961812820765
+    second: cape_front_animation_18
+  - first:
+      213: -813488216763124194
+    second: cape_front_animation_19
+  - first:
+      213: -556219716706315316
+    second: cape_front_animation_20
+  - first:
+      213: 428007275111881993
+    second: cape_front_animation_21
+  - first:
+      213: 3413102272730707024
+    second: cape_front_animation_22
+  - first:
+      213: 4718339270236641169
+    second: cape_front_animation_23
+  - first:
+      213: 4954870112225151880
+    second: cape_front_animation_24
+  - first:
+      213: -5653089326522217041
+    second: cape_front_animation_25
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cape_front_animation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -5}
+        - {x: -6, y: -4}
+        - {x: -3, y: -4}
+        - {x: -3, y: -5}
+      - - {x: -3, y: -6}
+        - {x: -3, y: -5}
+        - {x: -2, y: -5}
+        - {x: -2, y: -6}
+      - - {x: 3, y: -5}
+        - {x: 3, y: -4}
+        - {x: 4, y: -4}
+        - {x: 4, y: -5}
+      - - {x: 2, y: -6}
+        - {x: 2, y: -5}
+        - {x: 3, y: -5}
+        - {x: 3, y: -6}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30bf281931f6c32f0800000000000000
+      internalID: -991795688092009725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cape_front_animation_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -5}
+        - {x: -6, y: -4}
+        - {x: -3, y: -4}
+        - {x: -3, y: -5}
+      - - {x: -3, y: -6}
+        - {x: -3, y: -5}
+        - {x: -2, y: -5}
+        - {x: -2, y: -6}
+      - - {x: 3, y: -5}
+        - {x: 3, y: -4}
+        - {x: 4, y: -4}
+        - {x: 4, y: -5}
+      - - {x: 2, y: -6}
+        - {x: 2, y: -5}
+        - {x: 3, y: -5}
+        - {x: 3, y: -6}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0098b27f6ee3a8ec0800000000000000
+      internalID: -3563966993400100608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cape_front_animation_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -5}
+        - {x: -6, y: -4}
+        - {x: -3, y: -4}
+        - {x: -3, y: -5}
+      - - {x: -3, y: -6}
+        - {x: -3, y: -5}
+        - {x: -2, y: -5}
+        - {x: -2, y: -6}
+      - - {x: 3, y: -5}
+        - {x: 3, y: -4}
+        - {x: 4, y: -4}
+        - {x: 4, y: -5}
+      - - {x: 2, y: -6}
+        - {x: 2, y: -5}
+        - {x: 3, y: -5}
+        - {x: 3, y: -6}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd87d92f2e30a1100800000000000000
+      internalID: 79380216700303580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cape_front_animation_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -5}
+        - {x: -6, y: -4}
+        - {x: -3, y: -4}
+        - {x: -3, y: -5}
+      - - {x: -3, y: -6}
+        - {x: -3, y: -5}
+        - {x: -2, y: -5}
+        - {x: -2, y: -6}
+      - - {x: 3, y: -5}
+        - {x: 3, y: -4}
+        - {x: 4, y: -4}
+        - {x: 4, y: -5}
+      - - {x: 2, y: -6}
+        - {x: 2, y: -5}
+        - {x: 3, y: -5}
+        - {x: 3, y: -6}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d26d858dc3315060800000000000000
+      internalID: 6940385458556592856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cape_front_animation_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -5}
+        - {x: -6, y: -4}
+        - {x: -3, y: -4}
+        - {x: -3, y: -5}
+      - - {x: -3, y: -6}
+        - {x: -3, y: -5}
+        - {x: -2, y: -5}
+        - {x: -2, y: -6}
+      - - {x: 3, y: -5}
+        - {x: 3, y: -4}
+        - {x: 4, y: -4}
+        - {x: 4, y: -5}
+      - - {x: 2, y: -6}
+        - {x: 2, y: -5}
+        - {x: 3, y: -5}
+        - {x: 3, y: -6}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a03b3ba3a21bc6d30800000000000000
+      internalID: 4426107328729953034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cape_front_animation_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -5}
+        - {x: -6, y: -4}
+        - {x: -3, y: -4}
+        - {x: -3, y: -5}
+      - - {x: -3, y: -6}
+        - {x: -3, y: -5}
+        - {x: -2, y: -5}
+        - {x: -2, y: -6}
+      - - {x: 3, y: -5}
+        - {x: 3, y: -4}
+        - {x: 4, y: -4}
+        - {x: 4, y: -5}
+      - - {x: 2, y: -6}
+        - {x: 2, y: -5}
+        - {x: 3, y: -5}
+        - {x: 3, y: -6}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3876af12dd6e23fa0800000000000000
+      internalID: -5822337530804410493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cape_front_animation_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -5}
+        - {x: -6, y: -4}
+        - {x: -3, y: -4}
+        - {x: -3, y: -5}
+      - - {x: -3, y: -6}
+        - {x: -3, y: -5}
+        - {x: -2, y: -5}
+        - {x: -2, y: -6}
+      - - {x: 3, y: -5}
+        - {x: 3, y: -4}
+        - {x: 4, y: -4}
+        - {x: 4, y: -5}
+      - - {x: 2, y: -6}
+        - {x: 2, y: -5}
+        - {x: 3, y: -5}
+        - {x: 3, y: -6}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b1c7d6497f0b000800000000000000
+      internalID: 49811812765145991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cape_front_animation_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -5}
+        - {x: -6, y: -4}
+        - {x: -3, y: -4}
+        - {x: -3, y: -5}
+      - - {x: -3, y: -6}
+        - {x: -3, y: -5}
+        - {x: -2, y: -5}
+        - {x: -2, y: -6}
+      - - {x: 3, y: -5}
+        - {x: 3, y: -4}
+        - {x: 4, y: -4}
+        - {x: 4, y: -5}
+      - - {x: 2, y: -6}
+        - {x: 2, y: -5}
+        - {x: 3, y: -5}
+        - {x: 3, y: -6}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e889e47846c48070800000000000000
+      internalID: 8107823243675142373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cape_front_animation_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -5}
+        - {x: -6, y: -4}
+        - {x: -3, y: -4}
+        - {x: -3, y: -5}
+      - - {x: -3, y: -6}
+        - {x: -3, y: -5}
+        - {x: -2, y: -5}
+        - {x: -2, y: -6}
+      - - {x: 3, y: -5}
+        - {x: 3, y: -4}
+        - {x: 4, y: -4}
+        - {x: 4, y: -5}
+      - - {x: 2, y: -6}
+        - {x: 2, y: -5}
+        - {x: 3, y: -5}
+        - {x: 3, y: -6}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ffb8ad0e2fa9400800000000000000
+      internalID: 331844570118356768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cape_front_animation_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -5}
+        - {x: -6, y: -4}
+        - {x: -3, y: -4}
+        - {x: -3, y: -5}
+      - - {x: -3, y: -6}
+        - {x: -3, y: -5}
+        - {x: -2, y: -5}
+        - {x: -2, y: -6}
+      - - {x: 3, y: -5}
+        - {x: 3, y: -4}
+        - {x: 4, y: -4}
+        - {x: 4, y: -5}
+      - - {x: 2, y: -6}
+        - {x: 2, y: -5}
+        - {x: 3, y: -5}
+        - {x: 3, y: -6}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd7e614be55854d0800000000000000
+      internalID: -3145669870814855735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cape_front_animation_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -5}
+        - {x: -6, y: -4}
+        - {x: -3, y: -4}
+        - {x: -3, y: -5}
+      - - {x: -3, y: -6}
+        - {x: -3, y: -5}
+        - {x: -2, y: -5}
+        - {x: -2, y: -6}
+      - - {x: 3, y: -5}
+        - {x: 3, y: -4}
+        - {x: 4, y: -4}
+        - {x: 4, y: -5}
+      - - {x: 2, y: -6}
+        - {x: 2, y: -5}
+        - {x: 3, y: -5}
+        - {x: 3, y: -6}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 226992c2b65c45f60800000000000000
+      internalID: 8022253900346791458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cape_front_animation_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -5}
+        - {x: -6, y: -4}
+        - {x: -3, y: -4}
+        - {x: -3, y: -5}
+      - - {x: -3, y: -6}
+        - {x: -3, y: -5}
+        - {x: -2, y: -5}
+        - {x: -2, y: -6}
+      - - {x: 3, y: -5}
+        - {x: 3, y: -4}
+        - {x: 4, y: -4}
+        - {x: 4, y: -5}
+      - - {x: 2, y: -6}
+        - {x: 2, y: -5}
+        - {x: 3, y: -5}
+        - {x: 3, y: -6}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 767547440e3503b30800000000000000
+      internalID: 4265001069806114663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cape_front_animation_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: -1}
+        - {x: 2, y: 0}
+        - {x: 6, y: 0}
+        - {x: 6, y: -1}
+      - - {x: 6, y: -2}
+        - {x: 6, y: -1}
+        - {x: 7, y: -1}
+        - {x: 7, y: -2}
+      - - {x: 11, y: -3}
+        - {x: 11, y: -2}
+        - {x: 12, y: -2}
+        - {x: 12, y: -3}
+      - - {x: 12, y: -2}
+        - {x: 12, y: -1}
+        - {x: 13, y: -1}
+        - {x: 13, y: -2}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c59e15951d0b6050800000000000000
+      internalID: 5794739731889558983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cape_front_animation_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: -1}
+        - {x: 2, y: 0}
+        - {x: 6, y: 0}
+        - {x: 6, y: -1}
+      - - {x: 6, y: -2}
+        - {x: 6, y: -1}
+        - {x: 7, y: -1}
+        - {x: 7, y: -2}
+      - - {x: 11, y: -3}
+        - {x: 11, y: -2}
+        - {x: 12, y: -2}
+        - {x: 12, y: -3}
+      - - {x: 12, y: -2}
+        - {x: 12, y: -1}
+        - {x: 13, y: -1}
+        - {x: 13, y: -2}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3488707d3d3e79110800000000000000
+      internalID: 1267732319113283651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cape_front_animation_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: -5}
+        - {x: -2, y: -4}
+        - {x: 2, y: -4}
+        - {x: 2, y: -5}
+      - - {x: 2, y: -6}
+        - {x: 2, y: -5}
+        - {x: 3, y: -5}
+        - {x: 3, y: -6}
+      - - {x: 7, y: -6}
+        - {x: 7, y: -5}
+        - {x: 8, y: -5}
+        - {x: 8, y: -6}
+      - - {x: 8, y: -5}
+        - {x: 8, y: -4}
+        - {x: 9, y: -4}
+        - {x: 9, y: -5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a7accb287861530800000000000000
+      internalID: 3825393929080699429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cape_front_animation_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -5}
+        - {x: -6, y: -4}
+        - {x: -3, y: -4}
+        - {x: -3, y: -5}
+      - - {x: -3, y: -6}
+        - {x: -3, y: -5}
+        - {x: -2, y: -5}
+        - {x: -2, y: -6}
+      - - {x: 2, y: -6}
+        - {x: 2, y: -5}
+        - {x: 3, y: -5}
+        - {x: 3, y: -6}
+      - - {x: 3, y: -5}
+        - {x: 3, y: -4}
+        - {x: 4, y: -4}
+        - {x: 4, y: -5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d2570f3227a46d0800000000000000
+      internalID: -3005464302632751738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cape_front_animation_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -5}
+        - {x: -6, y: -4}
+        - {x: -3, y: -4}
+        - {x: -3, y: -5}
+      - - {x: -3, y: -6}
+        - {x: -3, y: -5}
+        - {x: -2, y: -5}
+        - {x: -2, y: -6}
+      - - {x: 3, y: -5}
+        - {x: 3, y: -4}
+        - {x: 4, y: -4}
+        - {x: 4, y: -5}
+      - - {x: 2, y: -6}
+        - {x: 2, y: -5}
+        - {x: 3, y: -5}
+        - {x: 3, y: -6}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 701983a30ba8b6fc0800000000000000
+      internalID: -3500551795854765817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cape_front_animation_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: -5}
+        - {x: -7, y: -4}
+        - {x: -3, y: -4}
+        - {x: -3, y: -5}
+      - - {x: -6, y: -4}
+        - {x: -6, y: -3}
+        - {x: -4, y: -3}
+        - {x: -4, y: -4}
+      - - {x: -3, y: -6}
+        - {x: -3, y: -5}
+        - {x: -2, y: -5}
+        - {x: -2, y: -6}
+      - - {x: 2, y: -6}
+        - {x: 2, y: -5}
+        - {x: 3, y: -5}
+        - {x: 3, y: -6}
+      - - {x: 3, y: -5}
+        - {x: 3, y: -4}
+        - {x: 4, y: -4}
+        - {x: 4, y: -5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e1cead3e60c61930800000000000000
+      internalID: 4113686889363325414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cape_front_animation_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: -5}
+        - {x: -7, y: -4}
+        - {x: -3, y: -4}
+        - {x: -3, y: -5}
+      - - {x: -6, y: -4}
+        - {x: -6, y: -3}
+        - {x: -4, y: -3}
+        - {x: -4, y: -4}
+      - - {x: -3, y: -6}
+        - {x: -3, y: -5}
+        - {x: -2, y: -5}
+        - {x: -2, y: -6}
+      - - {x: 2, y: -6}
+        - {x: 2, y: -5}
+        - {x: 3, y: -5}
+        - {x: 3, y: -6}
+      - - {x: 3, y: -5}
+        - {x: 3, y: -4}
+        - {x: 4, y: -4}
+        - {x: 4, y: -5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d13d33615dcbec550800000000000000
+      internalID: 6183086961812820765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cape_front_animation_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: -7}
+        - {x: -7, y: -6}
+        - {x: -4, y: -6}
+        - {x: -4, y: -7}
+      - - {x: -4, y: -8}
+        - {x: -4, y: -7}
+        - {x: -3, y: -7}
+        - {x: -3, y: -8}
+      - - {x: -3, y: -9}
+        - {x: -3, y: -8}
+        - {x: -2, y: -8}
+        - {x: -2, y: -9}
+      - - {x: 2, y: -9}
+        - {x: 2, y: -8}
+        - {x: 3, y: -8}
+        - {x: 3, y: -9}
+      - - {x: 3, y: -8}
+        - {x: 3, y: -7}
+        - {x: 4, y: -7}
+        - {x: 4, y: -8}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e163ed2e6c8e5b4f0800000000000000
+      internalID: -813488216763124194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cape_front_animation_20
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: -7}
+        - {x: -7, y: -6}
+        - {x: -4, y: -6}
+        - {x: -4, y: -7}
+      - - {x: -4, y: -8}
+        - {x: -4, y: -7}
+        - {x: -3, y: -7}
+        - {x: -3, y: -8}
+      - - {x: -3, y: -9}
+        - {x: -3, y: -8}
+        - {x: -2, y: -8}
+        - {x: -2, y: -9}
+      - - {x: 2, y: -9}
+        - {x: 2, y: -8}
+        - {x: 3, y: -8}
+        - {x: 3, y: -9}
+      - - {x: 3, y: -8}
+        - {x: 3, y: -7}
+        - {x: 4, y: -7}
+        - {x: 4, y: -8}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3d6a85d19e748f0800000000000000
+      internalID: -556219716706315316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cape_front_animation_21
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: -7}
+        - {x: -7, y: -6}
+        - {x: -4, y: -6}
+        - {x: -4, y: -7}
+      - - {x: -4, y: -8}
+        - {x: -4, y: -7}
+        - {x: -3, y: -7}
+        - {x: -3, y: -8}
+      - - {x: -3, y: -9}
+        - {x: -3, y: -8}
+        - {x: -2, y: -8}
+        - {x: -2, y: -9}
+      - - {x: 2, y: -9}
+        - {x: 2, y: -8}
+        - {x: 3, y: -8}
+        - {x: 3, y: -9}
+      - - {x: 3, y: -8}
+        - {x: 3, y: -7}
+        - {x: 4, y: -7}
+        - {x: 4, y: -8}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90d935a595690f500800000000000000
+      internalID: 428007275111881993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cape_front_animation_22
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: -7}
+        - {x: -7, y: -6}
+        - {x: -4, y: -6}
+        - {x: -4, y: -7}
+      - - {x: -4, y: -8}
+        - {x: -4, y: -7}
+        - {x: -3, y: -7}
+        - {x: -3, y: -8}
+      - - {x: -3, y: -9}
+        - {x: -3, y: -8}
+        - {x: -2, y: -8}
+        - {x: -2, y: -9}
+      - - {x: 2, y: -9}
+        - {x: 2, y: -8}
+        - {x: 3, y: -8}
+        - {x: 3, y: -9}
+      - - {x: 3, y: -8}
+        - {x: 3, y: -7}
+        - {x: 4, y: -7}
+        - {x: 4, y: -8}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05431340f66cd5f20800000000000000
+      internalID: 3413102272730707024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cape_front_animation_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -5}
+        - {x: -6, y: -4}
+        - {x: -3, y: -4}
+        - {x: -3, y: -5}
+      - - {x: -3, y: -6}
+        - {x: -3, y: -5}
+        - {x: -2, y: -5}
+        - {x: -2, y: -6}
+      - - {x: 3, y: -5}
+        - {x: 3, y: -4}
+        - {x: 4, y: -4}
+        - {x: 4, y: -5}
+      - - {x: 2, y: -6}
+        - {x: 2, y: -5}
+        - {x: 3, y: -5}
+        - {x: 3, y: -6}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1971b344198ea7140800000000000000
+      internalID: 4718339270236641169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cape_front_animation_24
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -5}
+        - {x: -6, y: -4}
+        - {x: -3, y: -4}
+        - {x: -3, y: -5}
+      - - {x: -3, y: -6}
+        - {x: -3, y: -5}
+        - {x: -2, y: -5}
+        - {x: -2, y: -6}
+      - - {x: 3, y: -5}
+        - {x: 3, y: -4}
+        - {x: 4, y: -4}
+        - {x: 4, y: -5}
+      - - {x: 2, y: -6}
+        - {x: 2, y: -5}
+        - {x: 3, y: -5}
+        - {x: 3, y: -6}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b41637d1c33c440800000000000000
+      internalID: 4954870112225151880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cape_front_animation_25
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -5}
+        - {x: -6, y: -4}
+        - {x: -3, y: -4}
+        - {x: -3, y: -5}
+      - - {x: -3, y: -6}
+        - {x: -3, y: -5}
+        - {x: -2, y: -5}
+        - {x: -2, y: -6}
+      - - {x: 3, y: -5}
+        - {x: 3, y: -4}
+        - {x: 4, y: -4}
+        - {x: 4, y: -5}
+      - - {x: 2, y: -6}
+        - {x: 2, y: -5}
+        - {x: 3, y: -5}
+        - {x: 3, y: -6}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad471975313c81b0800000000000000
+      internalID: -5653089326522217041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

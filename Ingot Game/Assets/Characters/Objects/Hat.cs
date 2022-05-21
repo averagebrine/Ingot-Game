@@ -6,5 +6,6 @@ public class Hat : ScriptableObject
     public string hatName;
 
     public Texture2D hatTexture;
+
     public bool collectable;
 }

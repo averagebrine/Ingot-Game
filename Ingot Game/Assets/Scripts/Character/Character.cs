@@ -8,4 +8,6 @@ public class Character : ScriptableObject
     public Texture2D baseTexture;
     public Eyes defaultEyes;
     public Hat defaultHat;
+    public Cape defaultCape;
+    public Necklace defaultNecklace;
 }

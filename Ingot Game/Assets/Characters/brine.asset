@@ -16,3 +16,5 @@ MonoBehaviour:
   baseTexture: {fileID: 2800000, guid: 35f980b9a5f2da5d9989ba4b3a25dfce, type: 3}
   defaultEyes: {fileID: 11400000, guid: 3f93a2ad0305181c48216a972e5d7f11, type: 2}
   defaultHat: {fileID: 11400000, guid: 237071b937b009b8f9e92a9699ef4e63, type: 2}
+  defaultCape: {fileID: 11400000, guid: 54f80b2440eec816ab0a14733e074735, type: 2}
+  defaultNecklace: {fileID: 11400000, guid: 9f2f91d42f4ea7f8db51201f2a7075a6, type: 2}

@@ -8,6 +8,9 @@ public class SkinSystem : MonoBehaviour
     [SerializeField] private Material characterMaterial;
     [SerializeField] private GameObject hat;
     [SerializeField] private GameObject eyes;
+    [SerializeField] private GameObject cape;
+    [SerializeField] private GameObject capeFront;
+    [SerializeField] private GameObject necklace;
 
     void Update()
     {
@@ -55,5 +58,36 @@ public class SkinSystem : MonoBehaviour
         {
             eyes.SetActive(false);
         }
+
+        if (characters[i].defaultCape != null)
+        {
+            cape.SetActive(true);
+            cape.GetComponent<SpriteRenderer>().material.SetTexture("_SkinTex", characters[i].defaultCape.capeTexture);
+        }
+        else
+        {
+            cape.SetActive(false);
+        }
+
+        if (characters[i].defaultCape != null)
+        {
+            capeFront.SetActive(true);
+            capeFront.GetComponent<SpriteRenderer>().material.SetTexture("_SkinTex", characters[i].defaultCape.capeTexture);
+        }
+        else
+        {
+            capeFront.SetActive(false);
+        }
+
+        if (characters[i].defaultNecklace != null)
+        {
+            necklace.SetActive(true);
+            necklace.GetComponent<SpriteRenderer>().material.SetTexture("_SkinTex", characters[i].defaultNecklace.necklaceTexture);
+        }
+        else
+        {
+            necklace.SetActive(false);
+        }
+
     }
 }

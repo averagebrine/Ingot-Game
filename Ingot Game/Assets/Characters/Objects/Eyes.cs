@@ -7,5 +7,6 @@ public class Eyes : ScriptableObject
 
     public Texture2D eyesTexture;
     public Texture2D wideTexture;
+
     public bool collectable;
 }

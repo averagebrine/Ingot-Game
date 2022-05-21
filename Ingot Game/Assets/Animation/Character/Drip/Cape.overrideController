@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Cape
+  m_Controller: {fileID: 9100000, guid: 495c396481a9caf05a281e1c2a68481a, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 98c5f42ad8121978383b405136fe38f3, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4e3bea05c6c13de358c5baf782f8d0ad, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 9b9a09de474dfdca78d81d04bf89a1b1, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 3b1dd1f546c42f335b403ee410015353, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: da9c40f6f46d717bf9b48b4d0fd0af48, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: bac39f5a963ae325a8f40b8257ce4450, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 3ba8cfb57a067c497a85786066fa9e6c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 161413bf4da0b84b4aafcccfa8ba84d4, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: aa5cfa10fb2d25316bcc0bc0c2c4ecde, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7abb1cd4295423d808303e8b41eb9e7f, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 0e2ef9d134da683f9ad6b53076853d11, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 8336b5b0f751fdc8fa77fc1b42b60a5e, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a302fdb6937be4004a994c2185ec3654, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 703c62417fa94276fa81521bdcb716e8, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 1dc55738b0dd23473ae3fc1ba2b6ae7f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 96129c6b6ca494a919c7e6f879fc7cd6, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: ec99c2149a7d113cf95941a8b665467e, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 0ba386545278817a0a3315a05422d544, type: 2}
