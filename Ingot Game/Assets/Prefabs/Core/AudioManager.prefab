@@ -59,3 +59,17 @@ MonoBehaviour:
       pitch: 1
       loop: 0
       source: {fileID: 0}
+  - poolName: All your ingot
+    sounds:
+    - name: All your ingot 1
+      clip: {fileID: 8300000, guid: 92682aec6272a9b0d970e83ff326e16b, type: 3}
+      volume: 1
+      pitch: 1
+      loop: 0
+      source: {fileID: 0}
+    - name: All your ingot
+      clip: {fileID: 8300000, guid: b19275c60a09e26b79bdf15311845507, type: 3}
+      volume: 1
+      pitch: 1
+      loop: 0
+      source: {fileID: 0}

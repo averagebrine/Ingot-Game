@@ -131,6 +131,8 @@ SpriteAtlas:
   - {fileID: -6947956931416742880, guid: 4c0ba4a355a0849c4884f05e79162314, type: 3}
   - {fileID: -1715121379367591012, guid: 4c0ba4a355a0849c4884f05e79162314, type: 3}
   - {fileID: 2693970717840012155, guid: 4c0ba4a355a0849c4884f05e79162314, type: 3}
+  - {fileID: 21300000, guid: 4de5e6e3665ec669391fb2217bd56e08, type: 3}
+  - {fileID: 21300000, guid: 5d4374f399e4e0c6485889cac5c37fb8, type: 3}
   - {fileID: -2435287327796760295, guid: b6fd3904480a53fd183d72cffe240c8e, type: 3}
   - {fileID: 3401085171884530463, guid: b6fd3904480a53fd183d72cffe240c8e, type: 3}
   - {fileID: 8648601620957034440, guid: b6fd3904480a53fd183d72cffe240c8e, type: 3}
@@ -522,6 +524,7 @@ SpriteAtlas:
   - {fileID: -147678773966883542, guid: 609cd25afef188603917f7f2b9361be5, type: 3}
   - {fileID: 6150683719243240947, guid: 609cd25afef188603917f7f2b9361be5, type: 3}
   - {fileID: 7653311231322839147, guid: 609cd25afef188603917f7f2b9361be5, type: 3}
+  - {fileID: 21300000, guid: 7ede865a8c5f4d87980e4cd7e7064832, type: 3}
   - {fileID: 21300000, guid: f9d7119beaaec096abc86ad69270c97d, type: 3}
   - {fileID: 1826509669402696951, guid: 9b7956cb058217b06be7323443a9e8b9, type: 3}
   - {fileID: -3231169759439049902, guid: 9b7956cb058217b06be7323443a9e8b9, type: 3}
@@ -549,6 +552,7 @@ SpriteAtlas:
   - {fileID: 4297335174005952073, guid: 9b7956cb058217b06be7323443a9e8b9, type: 3}
   - {fileID: 7412157251948254523, guid: 9b7956cb058217b06be7323443a9e8b9, type: 3}
   - {fileID: -142554946814450842, guid: 9b7956cb058217b06be7323443a9e8b9, type: 3}
+  - {fileID: 21300000, guid: b26ee56c779daea2f813b6ea03df62e7, type: 3}
   - {fileID: 1073333691201637667, guid: d884c88cd0e62460f8e7e1e1a00bac93, type: 3}
   - {fileID: 5323527049590897364, guid: d884c88cd0e62460f8e7e1e1a00bac93, type: 3}
   - {fileID: -2688946051990050968, guid: d884c88cd0e62460f8e7e1e1a00bac93, type: 3}
@@ -575,6 +579,7 @@ SpriteAtlas:
   - {fileID: 1741074871297008946, guid: d884c88cd0e62460f8e7e1e1a00bac93, type: 3}
   - {fileID: -4896330900789641637, guid: d884c88cd0e62460f8e7e1e1a00bac93, type: 3}
   - {fileID: 1873764921097823953, guid: d884c88cd0e62460f8e7e1e1a00bac93, type: 3}
+  - {fileID: 21300000, guid: 294d43fc70db72cf5b24d7f19e6406c5, type: 3}
   - {fileID: 850954133930796019, guid: c870f2fd2dc6aa9ac8833060e8ea417e, type: 3}
   - {fileID: -3224417979381855864, guid: c870f2fd2dc6aa9ac8833060e8ea417e, type: 3}
   - {fileID: -1575041149981106797, guid: c870f2fd2dc6aa9ac8833060e8ea417e, type: 3}
@@ -695,6 +700,8 @@ SpriteAtlas:
   - necklace_animation_13
   - necklace_animation_18
   - necklace_animation_19
+  - jojy_lookup
+  - migration_cape_lookup
   - source.eyes_animation_15
   - source.eyes_animation_14
   - source.eyes_animation_17
@@ -1086,6 +1093,7 @@ SpriteAtlas:
   - source.character_animation_4
   - source.character_animation_7
   - source.character_animation_6
+  - red_tie_lookup
   - a_chain_lookup
   - source.hat_animation_9
   - source.hat_animation_8
@@ -1113,6 +1121,7 @@ SpriteAtlas:
   - source.hat_animation_17
   - source.hat_animation_14
   - source.hat_animation_15
+  - black_pendant
   - character_animation_8
   - character_animation_9
   - character_animation_6
@@ -1139,6 +1148,7 @@ SpriteAtlas:
   - character_animation_21
   - character_animation_22
   - character_animation_23
+  - black_chain
   - test_tiles_8
   - test_tiles_4
   - test_tiles_5

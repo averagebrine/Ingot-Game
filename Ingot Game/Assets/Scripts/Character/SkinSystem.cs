@@ -12,26 +12,29 @@ public class SkinSystem : MonoBehaviour
     [SerializeField] private GameObject capeFront;
     [SerializeField] private GameObject necklace;
 
+    private int currentCharacter = 0;
+
+    void Awake()
+    {
+        SwitchSkin(0);
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1)) 
         {
-            SwitchSkin(0);       
+            currentCharacter --;
+            if (currentCharacter < 0) currentCharacter = characters.Length - 1;
+
+            SwitchSkin(currentCharacter);       
         }
     
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            SwitchSkin(1);
-        }
+            currentCharacter ++;
+            if (currentCharacter >= characters.Length) currentCharacter = 0;
 
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            SwitchSkin(2);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            SwitchSkin(3);
+            SwitchSkin(currentCharacter);
         }
     }
 
@@ -39,6 +42,7 @@ public class SkinSystem : MonoBehaviour
     {
         characterMaterial.SetTexture("_SkinTex", characters[i].baseTexture);
 
+        // this code is so dumb but I don't think I'm gonna add any more types of cosmetics so it should be fine lol
         if (characters[i].defaultHat != null)
         {
             hat.SetActive(true);
@@ -88,6 +92,5 @@ public class SkinSystem : MonoBehaviour
         {
             necklace.SetActive(false);
         }
-
     }
 }

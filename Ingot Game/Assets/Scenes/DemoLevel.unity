@@ -12404,7 +12404,7 @@ RectTransform:
   - {fileID: 431694350}
   - {fileID: 2093918962}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -20508,7 +20508,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1727208315880285240, guid: 07223e8e21eaa29be8671362b1c254cb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.00000035762787
+      value: -0.00000023841858
       objectReference: {fileID: 0}
     - target: {fileID: 1727208315880285240, guid: 07223e8e21eaa29be8671362b1c254cb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -20964,7 +20964,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4895370470189564919, guid: fdc9035b5704dfc7c83e379e7e8f4455, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4895370470189564919, guid: fdc9035b5704dfc7c83e379e7e8f4455, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21072,6 +21072,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1723877886, guid: 34b692f36623f45c79f23ccdcf02213e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7082996474490313607, guid: 34b692f36623f45c79f23ccdcf02213e, type: 3}
       propertyPath: m_Name
       value: Mimic

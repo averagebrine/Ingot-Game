@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e016e12ae8ed4ed2497d9985d0a900fd, type: 3}
-  m_Name: rainbow_johnson
+  m_Name: jojy
   m_EditorClassIdentifier: 
-  characterName: Rainbow Johnson
-  baseTexture: {fileID: 2800000, guid: 3d4c7e46fccecf747a29e9ca1aff133c, type: 3}
+  characterName: 
+  baseTexture: {fileID: 2800000, guid: 4de5e6e3665ec669391fb2217bd56e08, type: 3}
   defaultEyes: {fileID: 0}
   defaultHat: {fileID: 0}
-  defaultCape: {fileID: 0}
-  defaultNecklace: {fileID: 0}
+  defaultCape: {fileID: 11400000, guid: 42e811cc02dcb75148c090e9c3a329cb, type: 2}
+  defaultNecklace: {fileID: 11400000, guid: 5c3610762fe3875939befcec26779ac0, type: 2}

@@ -215,7 +215,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1886879285}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.00000035762787, y: 0, z: -10}
+  m_LocalPosition: {x: -0.00000023841858, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1675549606}
@@ -463,7 +463,7 @@ MonoBehaviour:
   defaultGravity: 2.2
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 2824
+    m_Bits: 2568
   groundCheckPosition: {fileID: 2208411455871648080}
   boxSize: {x: 0.86, y: 0.1}
   crouchDisableCollider: {fileID: 2208411455112465882}
@@ -505,6 +505,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4a95375c6658dedbd8f51509ddcf101d, type: 2}
   - {fileID: 11400000, guid: ed585d93e9c9c713d902a666f1ab3322, type: 2}
   - {fileID: 11400000, guid: 801876547d319a26fa67ef32c9e9e540, type: 2}
+  - {fileID: 11400000, guid: a7229e717687ead37bf1d35ca59bc9cf, type: 2}
   characterMaterial: {fileID: 2100000, guid: 6b26a9ec3aff1500d8bb4492200362b4, type: 2}
   hat: {fileID: 592786794}
   eyes: {fileID: 7017697373513950997}
