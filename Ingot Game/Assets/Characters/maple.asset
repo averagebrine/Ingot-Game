@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e016e12ae8ed4ed2497d9985d0a900fd, type: 3}
+  m_Name: maple
+  m_EditorClassIdentifier: 
+  characterName: Maple
+  baseTexture: {fileID: 2800000, guid: 8f3785fb785e786df8522db29538483e, type: 3}
+  defaultEyes: {fileID: 11400000, guid: 4d9151aa61bd736b7b727906aa726222, type: 2}
+  defaultHat: {fileID: 0}
+  defaultCape: {fileID: 0}
+  defaultNecklace: {fileID: 11400000, guid: d1783d937c368fa98b5dc6ee5a9f252d, type: 2}

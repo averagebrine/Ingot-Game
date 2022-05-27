@@ -35,6 +35,14 @@ public class GameManager : MonoBehaviour
         slotDisplay = "null";
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.F1))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+    }
+
     public void LoadGame(int slot)
     {
         if(slot == -1) return;

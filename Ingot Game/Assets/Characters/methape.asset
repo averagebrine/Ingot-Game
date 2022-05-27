@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Methape
   baseTexture: {fileID: 2800000, guid: 2af55778ae1f8aa60bcf2e1a5bd543b1, type: 3}
-  defaultEyes: {fileID: 0}
-  defaultHat: {fileID: 11400000, guid: 78372ab928beb04d3bf8bebc5660e823, type: 2}
+  defaultEyes: {fileID: 11400000, guid: 86a8bf973ddcbad6ab3e4d0a5eac1a31, type: 2}
+  defaultHat: {fileID: 0}
+  defaultCape: {fileID: 0}
+  defaultNecklace: {fileID: 0}

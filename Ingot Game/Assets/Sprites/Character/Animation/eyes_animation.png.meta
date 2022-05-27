@@ -267,10 +267,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -3, y: -4}
-        - {x: -3, y: 4}
-        - {x: 5, y: 4}
-        - {x: 5, y: -4}
+      - - {x: 0, y: 0}
+        - {x: 0, y: 0}
+        - {x: 0, y: 0}
+        - {x: 0, y: 0}
       physicsShape: []
       tessellationDetail: 0
       bones: []

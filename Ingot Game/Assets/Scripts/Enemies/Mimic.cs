@@ -7,11 +7,6 @@ public class Mimic : MonoBehaviour
     [SerializeField] private BoxCollider2D range;
     [SerializeField] private bool hidden = true;
 
-    void Awake()
-    {
-        Debug.Log(range.size);
-    }
-
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha3))
@@ -33,9 +28,5 @@ public class Mimic : MonoBehaviour
     {
         hidden = false;
         range.enabled = false;
-
-        Debug.Log("Surprise, MF!");
-
-        FindObjectOfType<AudioManager>().PlayFromPool("All your ingot");
     }
 }

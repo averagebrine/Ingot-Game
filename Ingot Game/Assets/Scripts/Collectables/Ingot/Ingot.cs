@@ -10,9 +10,15 @@ public class Ingot : MonoBehaviour
     [SerializeField] private bool collidable;
     [SerializeField] private bool animates;
 
+    private Renderer sprite;
+    private SkinSystem character;
+
  
     private void Awake()
     {
+        sprite = GetComponent<Renderer>();
+        character = FindObjectOfType<SkinSystem>();
+
         if (!stationary && !collidable) collidable = true;
 
         if (stationary)
@@ -33,6 +39,14 @@ public class Ingot : MonoBehaviour
         if (!animates)
         {
             GetComponent<Animator>().enabled = false;
+        }
+    }
+
+    private void LateUpdate()
+    {
+        if (sprite.isVisible)
+        {
+            character.ingotSeen = true;
         }
     }
 

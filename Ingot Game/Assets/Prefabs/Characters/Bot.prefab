@@ -215,7 +215,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1886879285}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.00000023841858, y: 0, z: -10}
+  m_LocalPosition: {x: -0.00000035762787, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1675549606}
@@ -469,8 +469,10 @@ MonoBehaviour:
   crouchDisableCollider: {fileID: 2208411455112465882}
   ceilingCheckPosition: {fileID: 2208411455224649704}
   ceilingCheckSize: {x: 0.86, y: 0.5}
+  baseCollider: {fileID: 2208411455112465879}
   grounded: 0
   crouching: 0
+  jumpPad: 0
 --- !u!114 &5011159150171096193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -503,15 +505,19 @@ MonoBehaviour:
   characters:
   - {fileID: 11400000, guid: 06f697867e735d23389ab6beeb3cf5c9, type: 2}
   - {fileID: 11400000, guid: 4a95375c6658dedbd8f51509ddcf101d, type: 2}
-  - {fileID: 11400000, guid: ed585d93e9c9c713d902a666f1ab3322, type: 2}
-  - {fileID: 11400000, guid: 801876547d319a26fa67ef32c9e9e540, type: 2}
   - {fileID: 11400000, guid: a7229e717687ead37bf1d35ca59bc9cf, type: 2}
+  - {fileID: 11400000, guid: ed585d93e9c9c713d902a666f1ab3322, type: 2}
+  - {fileID: 11400000, guid: fa0e654cc76bdeb1abe3828cd0368c08, type: 2}
+  - {fileID: 11400000, guid: a8226dabfe5e05223bc689c7a528897b, type: 2}
+  - {fileID: 11400000, guid: 801876547d319a26fa67ef32c9e9e540, type: 2}
+  - {fileID: 11400000, guid: 460078c67952a1f0380e0d78c546bfe4, type: 2}
   characterMaterial: {fileID: 2100000, guid: 6b26a9ec3aff1500d8bb4492200362b4, type: 2}
   hat: {fileID: 592786794}
   eyes: {fileID: 7017697373513950997}
   cape: {fileID: 3250751164898315486}
   capeFront: {fileID: 4008234566041471718}
   necklace: {fileID: 8198259006924800008}
+  ingotSeen: 0
 --- !u!114 &6990933794946771727
 MonoBehaviour:
   m_ObjectHideFlags: 0

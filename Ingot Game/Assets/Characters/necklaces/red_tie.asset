@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33eee6dfc5a4bb1f3b5dfc644e179ad2, type: 3}
   m_Name: red_tie
   m_EditorClassIdentifier: 
-  necklaceName: 
-  necklaceTexture: {fileID: 0}
-  collectable: 0
+  necklaceName: Red Tie
+  necklaceTexture: {fileID: 2800000, guid: 7ede865a8c5f4d87980e4cd7e7064832, type: 3}
+  collectable: 1

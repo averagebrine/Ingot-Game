@@ -17,7 +17,7 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private float jumpVelocity;
     [SerializeField] private float fallMultiplier;
     [SerializeField] private float lowJumpMultiplier;
-    [SerializeField] private float defaultGravity;
+    public float defaultGravity;
 
     [Header("Ground Check Config")]
     [SerializeField] private LayerMask whatIsGround;
@@ -30,10 +30,10 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private Vector2 ceilingCheckSize;
 
     [Header("Misc")]
+    [SerializeField] private Collider2D baseCollider; 
 
     // components
     private Rigidbody2D rb;
-
 
     [HideInInspector] public bool grounded;
     [HideInInspector] public bool crouching;
@@ -45,6 +45,8 @@ public class CharacterMovement : MonoBehaviour
     private bool crouchRequest;
     private bool isFacingRight = true;
     private float fallingTimer;
+    public bool jumpPad;
+    private bool wasGrounded;
     
     private void Awake()
     {
@@ -66,9 +68,19 @@ public class CharacterMovement : MonoBehaviour
         else sprint = false;
 
         // temporary screen shake
-        if(!grounded && rb.velocity.y < 0f) fallingTimer += Time.deltaTime;
-        if(grounded && fallingTimer > 1f) FindObjectOfType<ShakeMachine>().Shake();
-        if (grounded) fallingTimer = 0f;
+        // if(!grounded && rb.velocity.y < 0f) fallingTimer += Time.deltaTime;
+        // if(grounded && fallingTimer > 1f) FindObjectOfType<ShakeMachine>().Shake();
+        // if (grounded) fallingTimer = 0f;
+
+        if (Input.GetKeyDown(KeyCode.F2))
+        {
+            FindObjectOfType<ChainConnect>().Connect(this.gameObject);
+        }
+
+        if (Input.GetKeyDown(KeyCode.F3))
+        {
+            FindObjectOfType<ChainConnect>().Disconnect(this.gameObject);
+        }
     }
 
     private void FixedUpdate()
@@ -76,10 +88,16 @@ public class CharacterMovement : MonoBehaviour
         ApplyLinearSmooth();
         Move();
 
+        wasGrounded = grounded;
+
         // boing
         if(!crouching && jumpRequest)
         {
+            jumpPad = false;
+
+            rb.velocity = new Vector2(rb.velocity.x, 0f);
             rb.AddForce(Vector2.up * jumpVelocity, ForceMode2D.Impulse);
+            
             jumpRequest = false;
         }       
         else
@@ -87,9 +105,17 @@ public class CharacterMovement : MonoBehaviour
             grounded = (Physics2D.OverlapBox(groundCheckPosition.position, boxSize, 0f, whatIsGround) != null);
         }
 
+        // on landing
+        if (grounded && !wasGrounded) 
+        {
+            if (jumpPad) jumpPad = false;
+        }
+
+        wasGrounded = false;
 
         // if the lowJumpMultiplier is too high, the character might fall too quickly :/
-        if(rb.velocity.y < 0) rb.gravityScale = defaultGravity * fallMultiplier;
+        if (jumpPad) rb.gravityScale = defaultGravity;
+        else if(rb.velocity.y < 0) rb.gravityScale = defaultGravity * fallMultiplier;
         else if(rb.velocity.y > 0 && !Input.GetButton("Jump")) rb.gravityScale = defaultGravity * lowJumpMultiplier;
         else rb.gravityScale = defaultGravity;
 
@@ -151,5 +177,21 @@ public class CharacterMovement : MonoBehaviour
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
+    }
+
+    public void Swing()
+    {
+        rb.constraints = RigidbodyConstraints2D.None;
+
+        baseCollider.enabled = false;
+        crouchDisableCollider.enabled = false;
+    }
+
+    public void Unswing()
+    {
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+
+        baseCollider.enabled = true;
+        crouchDisableCollider.enabled = true;
     }
 }

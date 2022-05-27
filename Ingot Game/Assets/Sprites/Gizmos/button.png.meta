@@ -1,28 +1,16 @@
 fileFormatVersion: 2
-guid: 9ff9e8b1735607d4585157729ce12323
+guid: dd5558dab302193dda0cb9fa0ce899c2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1795230745765466375
-    second: gizmos_0
+      213: 2530564911472380330
+    second: button_0
   - first:
-      213: -1913652196143718700
-    second: gizmos_1
+      213: 1763989116612304091
+    second: button_1
   - first:
-      213: -2929404905795058466
-    second: gizmos_2
-  - first:
-      213: 1063543148574416437
-    second: gizmos_3
-  - first:
-      213: 4543361274877926968
-    second: gizmos_4
-  - first:
-      213: 4467619163065597616
-    second: gizmos_5
-  - first:
-      213: -9115328361672586400
-    second: gizmos_6
+      213: -5033884579438549468
+    second: button_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -89,7 +77,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: 4
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -101,7 +89,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: 4
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,7 +101,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: 4
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -124,7 +112,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gizmos_0
+      name: button_0
       rect:
         serializedVersion: 2
         x: 0
@@ -138,14 +126,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9fe2ac4f52f0617e0800000000000000
-      internalID: -1795230745765466375
+      spriteID: aa90165216f5e1320800000000000000
+      internalID: 2530564911472380330
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gizmos_1
+      name: button_1
       rect:
         serializedVersion: 2
         x: 32
@@ -159,56 +147,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4de153177775175e0800000000000000
-      internalID: -1913652196143718700
+      spriteID: bdcd45b61c2fa7810800000000000000
+      internalID: 1763989116612304091
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gizmos_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed48cc242c9a857d0800000000000000
-      internalID: -2929404905795058466
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gizmos_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 53e1416dbd672ce00800000000000000
-      internalID: 1063543148574416437
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gizmos_4
+      name: button_2
       rect:
         serializedVersion: 2
         x: 0
@@ -222,50 +168,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83e5d5bf1034d0f30800000000000000
-      internalID: 4543361274877926968
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gizmos_5
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0beb04655fb200e30800000000000000
-      internalID: 4467619163065597616
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gizmos_6
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 06b467f6629df7180800000000000000
-      internalID: -9115328361672586400
+      spriteID: 426af3a45ac042ab0800000000000000
+      internalID: -5033884579438549468
       vertices: []
       indices: 
       edges: []

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e016e12ae8ed4ed2497d9985d0a900fd, type: 3}
+  m_Name: blob
+  m_EditorClassIdentifier: 
+  characterName: Blob
+  baseTexture: {fileID: 2800000, guid: d10f29667e4e3a1eda39bb0d7290c332, type: 3}
+  defaultEyes: {fileID: 11400000, guid: f119797f201acfe7d80618fc0586ebf6, type: 2}
+  defaultHat: {fileID: 0}
+  defaultCape: {fileID: 11400000, guid: 288e84a17cac9568095688feb4f99fbc, type: 2}
+  defaultNecklace: {fileID: 0}

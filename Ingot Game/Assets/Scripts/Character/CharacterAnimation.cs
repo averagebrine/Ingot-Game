@@ -42,6 +42,7 @@ public class CharacterAnimation : MonoBehaviour
                 animator.SetFloat("VelocityX", Mathf.Abs(rb.velocity.x));
             }
         }
+
         if(Mathf.Abs(rb.velocity.y) < 0.01f)
         {
             foreach(Animator animator in dripAnimators)

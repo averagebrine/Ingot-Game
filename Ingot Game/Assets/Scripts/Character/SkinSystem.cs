@@ -14,6 +14,9 @@ public class SkinSystem : MonoBehaviour
 
     private int currentCharacter = 0;
 
+    [HideInInspector] public bool ingotSeen;
+    private bool isWide;
+
     void Awake()
     {
         SwitchSkin(0);
@@ -36,10 +39,29 @@ public class SkinSystem : MonoBehaviour
 
             SwitchSkin(currentCharacter);
         }
+
+        // O_O
+        if (ingotSeen)
+        {
+            if (characters[currentCharacter].defaultEyes == null) return;
+
+            eyes.GetComponent<SpriteRenderer>().material.SetTexture("_SkinTex", characters[currentCharacter].defaultEyes.wideTexture);
+            ingotSeen = false;
+
+            isWide = true;
+        }
+        else if (isWide)
+        {
+            eyes.GetComponent<SpriteRenderer>().material.SetTexture("_SkinTex", characters[currentCharacter].defaultEyes.eyesTexture);
+
+            isWide = false;
+        }
     }
 
     public void SwitchSkin(int i)
     {
+        currentCharacter = i;
+
         characterMaterial.SetTexture("_SkinTex", characters[i].baseTexture);
 
         // this code is so dumb but I don't think I'm gonna add any more types of cosmetics so it should be fine lol
