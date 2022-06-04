@@ -17,7 +17,7 @@ public class GameInterfacePause : MonoBehaviour
 
     public void Exit()
     {
-        FindObjectOfType<GameManager>().SaveGame();
+        resumeButton.onClick.Invoke();
         SceneManager.LoadScene("Home");
     }
 }

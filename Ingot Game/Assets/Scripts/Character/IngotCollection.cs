@@ -46,6 +46,7 @@ public class IngotCollection : MonoBehaviour
         collectedStacks.Add(new IngotStack { type = ingot.type, amount = 1 });
         ingot.Collect();
     }
+
 }
 
 [System.Serializable]

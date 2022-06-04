@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ingot : MonoBehaviour
+public class Ingot : MonoBehaviour, IDataPersistance
 {
+    [SerializeField] private string id;
+
     public string type;
 
     [SerializeField] private bool stationary;
@@ -13,6 +15,13 @@ public class Ingot : MonoBehaviour
     private Renderer sprite;
     private SkinSystem character;
 
+    [HideInInspector] public bool collected;
+
+    [ContextMenu("Generate guid for id")]
+    private void GenerateGuid()
+    {
+        id = System.Guid.NewGuid().ToString();
+    }
  
     private void Awake()
     {
@@ -52,6 +61,25 @@ public class Ingot : MonoBehaviour
 
     public void Collect()
     {
+        collected = true;
         Destroy(gameObject);
+    }
+
+    public void LoadData(GameData data)
+    {
+        data.collectedIngots.TryGetValue(id, out collected);
+        if (collected)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        if (data.collectedIngots.ContainsKey(id))
+        {
+            data.collectedIngots.Remove(id);
+        }
+        data.collectedIngots.Add(id, collected);
     }
 }

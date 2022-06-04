@@ -45,7 +45,7 @@ public class CharacterMovement : MonoBehaviour
     private bool crouchRequest;
     private bool isFacingRight = true;
     private float fallingTimer;
-    public bool jumpPad;
+    [HideInInspector] public bool jumpPad;
     private bool wasGrounded;
     
     private void Awake()
@@ -71,16 +71,6 @@ public class CharacterMovement : MonoBehaviour
         // if(!grounded && rb.velocity.y < 0f) fallingTimer += Time.deltaTime;
         // if(grounded && fallingTimer > 1f) FindObjectOfType<ShakeMachine>().Shake();
         // if (grounded) fallingTimer = 0f;
-
-        if (Input.GetKeyDown(KeyCode.F2))
-        {
-            FindObjectOfType<ChainConnect>().Connect(this.gameObject);
-        }
-
-        if (Input.GetKeyDown(KeyCode.F3))
-        {
-            FindObjectOfType<ChainConnect>().Disconnect(this.gameObject);
-        }
     }
 
     private void FixedUpdate()

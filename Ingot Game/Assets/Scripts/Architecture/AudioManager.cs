@@ -11,18 +11,7 @@ public class AudioManager : MonoBehaviour
 
     void Awake()
     {
-        // Make sure there is only one AudioManager
-        if(instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-            return;
-        }
-
-        DontDestroyOnLoad(gameObject);
+        instance = this;
 
         foreach (Sound s in sounds)
         {
