@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e016e12ae8ed4ed2497d9985d0a900fd, type: 3}
   m_Name: rainbow_johnson
   m_EditorClassIdentifier: 
+  id: 546105c8-05fa-4b65-b38a-81b1018e8640
   characterName: Rainbow Johnson
   baseTexture: {fileID: 2800000, guid: 3d4c7e46fccecf747a29e9ca1aff133c, type: 3}
   defaultEyes: {fileID: 0}

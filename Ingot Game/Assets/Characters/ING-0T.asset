@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e016e12ae8ed4ed2497d9985d0a900fd, type: 3}
   m_Name: ING-0T
   m_EditorClassIdentifier: 
+  id: 1052a651-ca7e-4613-88ef-f0c0653022be
   characterName: ING-0T
   baseTexture: {fileID: 2800000, guid: 5955cfe9a425a43089c533150fc8205c, type: 3}
   defaultEyes: {fileID: 11400000, guid: 772323123785ef31bb5232aa027ba0ee, type: 2}

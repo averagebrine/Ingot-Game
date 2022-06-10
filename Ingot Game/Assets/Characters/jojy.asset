@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e016e12ae8ed4ed2497d9985d0a900fd, type: 3}
   m_Name: jojy
   m_EditorClassIdentifier: 
-  characterName: 
+  id: 9b754205-d0d7-4ec8-bd0a-0470fad66cb8
+  characterName: Jojy
   baseTexture: {fileID: 2800000, guid: 4de5e6e3665ec669391fb2217bd56e08, type: 3}
   defaultEyes: {fileID: 0}
   defaultHat: {fileID: 0}

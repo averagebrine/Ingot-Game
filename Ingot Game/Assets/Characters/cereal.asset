@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e016e12ae8ed4ed2497d9985d0a900fd, type: 3}
   m_Name: cereal
   m_EditorClassIdentifier: 
+  id: 259ea4b0-acf4-445a-a4f5-21ed0fa55231
   characterName: Cereal
   baseTexture: {fileID: 2800000, guid: 5216aea45fddbe10cbcae542388c5851, type: 3}
   defaultEyes: {fileID: 11400000, guid: c7a42667d848d36d1b998acfe3604026, type: 2}

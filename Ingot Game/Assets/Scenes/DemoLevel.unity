@@ -5009,7 +5009,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1727208315880285240, guid: 07223e8e21eaa29be8671362b1c254cb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.00000023841858
+      value: -0.00000047683716
       objectReference: {fileID: 0}
     - target: {fileID: 1727208315880285240, guid: 07223e8e21eaa29be8671362b1c254cb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5060,6 +5060,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1207561698}
     m_Modifications:
+    - target: {fileID: 1886879288, guid: 4e664e3b97157072d8b0037a49ea4394, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.00000047683716
+      objectReference: {fileID: 0}
     - target: {fileID: 2208411455422209574, guid: 4e664e3b97157072d8b0037a49ea4394, type: 3}
       propertyPath: m_Name
       value: Character
@@ -33557,6 +33561,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 994160673, guid: 99d7b0584ca1bfaf6a2a7fd0ea5d382f, type: 3}
+      propertyPath: playMusic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8626618227113959494, guid: 99d7b0584ca1bfaf6a2a7fd0ea5d382f, type: 3}
       propertyPath: m_RootOrder
       value: 0

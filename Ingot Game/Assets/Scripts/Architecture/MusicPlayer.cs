@@ -20,8 +20,6 @@ public class MusicPlayer : MonoBehaviour
             return;
         }
 
-        DontDestroyOnLoad(gameObject);
-
         if(playMusic) StartCoroutine(Music());
     }
 

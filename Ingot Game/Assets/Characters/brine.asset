@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e016e12ae8ed4ed2497d9985d0a900fd, type: 3}
   m_Name: brine
   m_EditorClassIdentifier: 
+  id: 9e67a7fa-f0d9-4f8c-93e3-7ad3cc3d89c8
   characterName: Brine
   baseTexture: {fileID: 2800000, guid: 35f980b9a5f2da5d9989ba4b3a25dfce, type: 3}
   defaultEyes: {fileID: 11400000, guid: 3f93a2ad0305181c48216a972e5d7f11, type: 2}

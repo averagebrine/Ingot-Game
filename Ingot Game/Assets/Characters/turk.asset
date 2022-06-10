@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e016e12ae8ed4ed2497d9985d0a900fd, type: 3}
   m_Name: turk
   m_EditorClassIdentifier: 
+  id: 20e49747-4f0e-4f72-9d92-e7a63b97cd4c
   characterName: Turk
   baseTexture: {fileID: 2800000, guid: f4d3261397ca4a35c9bd32dafd0b0295, type: 3}
   defaultEyes: {fileID: 11400000, guid: 38129b0d1648ff45c930883e57958389, type: 2}

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e016e12ae8ed4ed2497d9985d0a900fd, type: 3}
   m_Name: maple
   m_EditorClassIdentifier: 
+  id: 63e487aa-4017-4c37-a32b-e383cc6255af
   characterName: Maple
   baseTexture: {fileID: 2800000, guid: 8f3785fb785e786df8522db29538483e, type: 3}
   defaultEyes: {fileID: 11400000, guid: 4d9151aa61bd736b7b727906aa726222, type: 2}
